@@ -38,6 +38,14 @@
 
   /* ------- divider ------- */
   --dividerDefault: var(--neutral200);
+
+  /* ------- TYPOGRAPHY ------- */
+  --fontWeightReg: 400;
+  --fontWeightBold: 700;
+  --fontWeightBlack: 900;
+
+  --fontSizeReg: 14px;
+  --fontSizeLarge: 24px;
 }
 
 * {
