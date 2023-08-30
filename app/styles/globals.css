@@ -1,4 +1,17 @@
 :root {
+  /* greyscale */
+  --neutral900: #313235;
+  --neutral800: #404245;
+  --neutral600: #8f9399;
+  --neutral200: #ebeef3;
+  --neutral100: #f7f8fb;
+  --white75: rgb(255, 255, 255, 0.75);
+  --white: #fff;
+
+  /* accent color */
+  --armygreen700: #445954;
+  --armygreen500: #57736c;
+  --armygreenoverlay: rgb(68, 89, 84, 0.9);
 }
 
 * {
