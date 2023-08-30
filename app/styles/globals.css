@@ -1,5 +1,6 @@
 :root {
-  /* greyscale */
+  /* ------- COLOR VARIABLES ------- */
+  /* ------- greyscale ------- */
   --neutral900: #313235;
   --neutral800: #404245;
   --neutral600: #8f9399;
@@ -8,10 +9,35 @@
   --white75: rgb(255, 255, 255, 0.75);
   --white: #fff;
 
-  /* accent color */
+  /* ------- accent colors ------- */
   --armygreen700: #445954;
   --armygreen500: #57736c;
   --armygreenoverlay: rgb(68, 89, 84, 0.9);
+
+  /* ------- COLOR TOKENS ------- */
+  /* ------- text ------- */
+  --textPrimary: var(--neutral800);
+  --textSecondary: var(--neutral600);
+  --textPrimaryInverse: var(--neutral100);
+  --textSecondaryInverse: var(--white75);
+  --textAccent: var(--armygreen500);
+  --linkDefault: var(--armygreen500);
+  --linkHover: var(--armygreen700);
+
+  /* ------- icon ------- */
+  --iconPrimary: var(--neutral800);
+  --iconSecondary: var(--neutral600);
+  --iconPrimaryInverse: var(--white);
+
+  /* ------- surface ------- */
+  --siteBgPrimary: var(--white);
+  --siteBgSecondary: var(--neutral900);
+  --navBarPrimary: var(--armygreen500);
+  --navBarSecondary: var(--armygreen700);
+  --navBgOverlayMobile: var(--armygreenoverlay);
+
+  /* ------- divider ------- */
+  --dividerDefault: var(--neutral200);
 }
 
 * {
