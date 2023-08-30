@@ -49,6 +49,8 @@
 
   --lineHeight1: 140%;
   --lineHeight2: 110%;
+
+  --letterSpacing: -3%;
 }
 
 * {
