@@ -2,6 +2,7 @@ import './styles/globals.css';
 import './styles/reset.css';
 import { Public_Sans } from 'next/font/google';
 import Navbar from './components/navbar/Navbar';
+import Footer from './components/footer/Footer';
 
 const publicSans = Public_Sans(
   { subsets: ['latin'] },
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
       <body className={publicSans.className}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
