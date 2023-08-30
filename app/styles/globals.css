@@ -56,3 +56,36 @@
 * {
   box-sizing: border-box;
 }
+
+.link {
+  font-weight: var(--fontWeightReg);
+  font-size: var(--fontSizeReg);
+  line-height: var(--lineHeight1);
+  text-decoration: underline;
+}
+
+.paragraphRegular {
+  font-weight: var(--fontWeightReg);
+  font-size: var(--fontSizeReg);
+  line-height: var(--lineHeight1);
+}
+
+.paragraphBold {
+  font-weight: var(--fontWeightBold);
+  font-size: var(--fontSizeReg);
+  line-height: var(--lineHeight1);
+}
+
+.headingBold {
+  font-weight: var(--fontWeightBold);
+  font-size: var(--fontSizeLarge);
+  letter-spacing: var(--letterSpacing);
+  line-height: var(--lineHeight2);
+}
+
+.headingBlack {
+  font-weight: var(--fontWeightBlack);
+  font-size: var(--fontSizeLarge);
+  letter-spacing: var(--letterSpacing);
+  line-height: var(--lineHeight2);
+}
