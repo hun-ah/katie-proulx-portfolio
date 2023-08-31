@@ -1,10 +1,23 @@
 .container {
-  align-items: center;
   background: var(--navBarPrimary);
-  display: flex;
-  justify-content: space-between;
   position: fixed;
   height: 60px;
   top: 0;
   width: 100%;
+}
+
+.section {
+  align-items: center;
+  display: flex;
+  height: inherit;
+  margin: auto;
+  padding-left: var(--paddingSide);
+  width: 900px;
+}
+
+@media screen and (max-width: 600px) {
+  .section {
+    justify-content: space-between;
+    width: 100%;
+  }
 }
