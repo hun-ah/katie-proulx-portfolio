@@ -1,0 +1,38 @@
+.navBtn {
+  background: var(--navBarSecondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  padding: 0;
+  width: 60px;
+}
+
+.menuContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.menuLine {
+  background: var(--iconPrimaryInverse);
+  border-radius: 10px;
+  height: 1px;
+  width: 13px;
+  transition: 0.15s ease-in;
+}
+
+.menuLine:nth-last-child(1) {
+  width: 11px;
+}
+
+.open .menuLine:nth-child(1) {
+  transform: rotate(45deg) translate(2.5px, 3px);
+  width: 15px;
+}
+
+.open .menuLine:nth-child(2) {
+  transform: rotate(-45deg) translate(1.5px, -3px);
+  width: 15px;
+}
