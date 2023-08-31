@@ -18,7 +18,7 @@ const MobileMenu = () => {
   }, [isOpen]);
 
   return (
-    <div className={`${styles.container} ${isOpen ? showMenu : ''}`}></div>
+    <nav className={`${styles.container} ${isOpen ? showMenu : ''}`}></nav>
   );
 };
 
