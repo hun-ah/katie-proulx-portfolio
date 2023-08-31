@@ -10,9 +10,7 @@
 }
 
 .menuContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
+  position: relative;
 }
 
 .menuLine {
@@ -33,6 +31,6 @@
 }
 
 .open .menuLine:nth-child(2) {
-  transform: rotate(-45deg) translate(1.5px, -3px);
+  transform: rotate(-45deg) translate(1.5px, -2.7px);
   width: 15px;
 }
