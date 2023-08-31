@@ -4,7 +4,7 @@ import Hamburger from '../hamburger/Hamburger';
 
 const Navbar = () => {
   return (
-    <nav className={styles.container}>
+    <header className={styles.container}>
       <Image
         src='/logo.svg'
         alt='Katie Proulx, Product Designer'
@@ -12,7 +12,7 @@ const Navbar = () => {
         height={12}
       />
       <Hamburger />
-    </nav>
+    </header>
   );
 };
 
