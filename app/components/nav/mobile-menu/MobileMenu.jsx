@@ -6,6 +6,14 @@ import { useAppContext as MenuContext } from '../../contexts/MenuContext';
 const MobileMenu = () => {
   const { isOpen } = MenuContext();
   const showMenu = isOpen && `${styles.fadeIn}`;
+  const menuItems = [
+    { name: 'Project Name' },
+    { name: 'Project Name' },
+    { name: 'Project Name' },
+    { name: 'About' },
+    { name: 'Contact' },
+    { name: 'Linkedin' },
+  ];
 
   useEffect(() => {
     // prevent scroll when mobile nav is open
@@ -18,7 +26,16 @@ const MobileMenu = () => {
   }, [isOpen]);
 
   return (
-    <nav className={`${styles.container} ${isOpen ? showMenu : ''}`}></nav>
+    <nav className={`${styles.container} ${isOpen ? showMenu : ''}`}>
+      <menu className={styles.menu}>
+        <li className={`${styles.menuTitle} paragraphRegular`}>Work</li>
+        {menuItems.map((item) => (
+          <li className={`${styles.menuItem} headingBold`} key={item.name}>
+            {item.name}
+          </li>
+        ))}
+      </menu>
+    </nav>
   );
 };
 
