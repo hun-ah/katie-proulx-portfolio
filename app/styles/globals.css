@@ -57,6 +57,11 @@
   box-sizing: border-box;
 }
 
+button {
+  border: none;
+  cursor: pointer;
+}
+
 .link {
   font-weight: var(--fontWeightReg);
   font-size: var(--fontSizeReg);
