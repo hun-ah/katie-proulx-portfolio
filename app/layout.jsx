@@ -1,8 +1,10 @@
 import './styles/globals.css';
 import './styles/reset.css';
 import { Public_Sans } from 'next/font/google';
-import Navbar from './components/navbar/Navbar';
+import { MenuProvider } from './components/contexts/MenuContext';
+import Navbar from './components/nav/navbar/Navbar';
 import Footer from './components/footer/Footer';
+import MobileMenu from './components/nav/mobile-menu/MobileMenu';
 
 const publicSans = Public_Sans(
   { subsets: ['latin'] },
@@ -18,9 +20,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body className={publicSans.className}>
-        <Navbar />
-        {children}
-        <Footer />
+        <MenuProvider>
+          <Navbar />
+          <MobileMenu />
+          {children}
+          <Footer />
+        </MenuProvider>
       </body>
     </html>
   );
