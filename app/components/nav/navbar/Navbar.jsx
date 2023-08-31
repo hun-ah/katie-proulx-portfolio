@@ -5,13 +5,15 @@ import Hamburger from '../hamburger/Hamburger';
 const Navbar = () => {
   return (
     <header className={styles.container}>
-      <Image
-        src='/logo.svg'
-        alt='Katie Proulx, Product Designer'
-        width={201}
-        height={12}
-      />
-      <Hamburger />
+      <section className={styles.section}>
+        <Image
+          src='/logo.svg'
+          alt='Katie Proulx, Product Designer'
+          width={170}
+          height={12}
+        />
+        <Hamburger />
+      </section>
     </header>
   );
 };
