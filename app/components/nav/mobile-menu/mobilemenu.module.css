@@ -34,9 +34,11 @@
   margin-bottom: 16px;
 }
 
-.menuItem {
+.menuItem,
+.menuItem a {
   color: var(--textPrimaryInverse);
   cursor: pointer;
+  text-decoration: none;
 }
 
 .menuItem:nth-of-type(4) {
