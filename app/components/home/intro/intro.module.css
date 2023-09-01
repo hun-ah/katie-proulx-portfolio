@@ -1,0 +1,32 @@
+.container {
+  color: var(--textPrimary);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: auto;
+  padding: var(--paddingTopBottom) var(--paddingSide);
+  max-width: 900px;
+}
+
+.headshot {
+  border-radius: 50%;
+}
+
+.links {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.introLink,
+.introLink a {
+  color: var(--navBarPrimary);
+  cursor: pointer;
+  text-decoration: underline;
+  transition: 0.3s ease;
+}
+
+.introLink:hover,
+.introLink a:hover {
+  color: var(--navBarSecondary);
+}
