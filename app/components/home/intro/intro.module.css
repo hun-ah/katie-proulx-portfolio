@@ -20,13 +20,12 @@
 
 .introLink,
 .introLink a {
-  color: var(--navBarPrimary);
+  color: var(--linkDefault);
   cursor: pointer;
   text-decoration: underline;
-  transition: 0.3s ease;
 }
 
 .introLink:hover,
 .introLink a:hover {
-  color: var(--navBarSecondary);
+  color: var(--linkHover);
 }
