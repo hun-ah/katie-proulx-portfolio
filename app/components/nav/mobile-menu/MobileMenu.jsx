@@ -7,9 +7,9 @@ const MobileMenu = () => {
   const { isOpen } = MenuContext();
   const showMenu = isOpen && `${styles.fadeIn}`;
   const menuItems = [
-    { name: 'Project Name' },
-    { name: 'Project Name' },
-    { name: 'Project Name' },
+    { name: 'Project Name1' },
+    { name: 'Project Name2' },
+    { name: 'Project Name3' },
     { name: 'About' },
     { name: 'Contact' },
     { name: 'Linkedin' },
