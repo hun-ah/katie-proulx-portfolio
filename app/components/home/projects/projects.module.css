@@ -1,0 +1,12 @@
+.container {
+  margin: auto;
+  padding: 0 var(--paddingSide);
+  padding-bottom: var(--paddingTopBottom);
+  max-width: 900px;
+}
+
+.projectContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
