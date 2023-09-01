@@ -2,7 +2,7 @@ import styles from './about.module.css';
 
 const About = () => {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id='about'>
       <div className={styles.innerContainer}>
         <h4 className='headingBold'>about</h4>
         <p className='paragraphRegular'>
