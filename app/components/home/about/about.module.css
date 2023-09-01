@@ -1,0 +1,15 @@
+.container {
+  background: var(--siteBgSecondary);
+  color: var(--textPrimaryInverse);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.innerContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: var(--paddingTopBottom) var(--paddingSide);
+  width: 900px;
+}
