@@ -1,0 +1,44 @@
+.container {
+  cursor: pointer;
+  display: flex;
+  gap: 32px;
+}
+
+.container:hover h3 {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+  text-decoration-color: var(--textAccent);
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
+.company {
+  color: var(--textSecondary);
+}
+
+.title {
+  color: var(--textPrimary);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 900px) {
+  .textContainer {
+    max-width: 366px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .projectImage {
+    width: 100%;
+    height: auto;
+  }
+}
