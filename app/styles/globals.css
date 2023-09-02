@@ -29,6 +29,9 @@
   --iconSecondary: var(--neutral600);
   --iconPrimaryInverse: var(--white);
 
+  /* ------- button ------- */
+  --buttonDefault: var(--neutral100);
+
   /* ------- surface ------- */
   --siteBgPrimary: var(--white);
   --siteBgSecondary: var(--neutral900);
