@@ -5,6 +5,7 @@ import { MenuProvider } from './components/contexts/MenuContext';
 import Navbar from './components/nav/navbar/Navbar';
 import Footer from './components/footer/Footer';
 import MobileMenu from './components/nav/mobile-menu/MobileMenu';
+import ContactModal from './components/home/intro/contact-modal/ContactModal';
 
 const publicSans = Public_Sans(
   { subsets: ['latin'] },
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
         <MenuProvider>
           <Navbar />
           <MobileMenu />
+          <ContactModal />
           {children}
           <Footer />
         </MenuProvider>
