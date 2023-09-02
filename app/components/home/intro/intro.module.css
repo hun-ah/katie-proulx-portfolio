@@ -30,7 +30,18 @@
   text-decoration: underline;
 }
 
+.introLink a {
+  display: flex;
+  gap: 4px;
+}
+
 .introLink:hover,
-.introLink a:hover {
+.introLink a:hover,
+.introLink a:hover > svg * {
   color: var(--linkHover);
+  stroke: var(--linkHover);
+}
+
+.introLink a > svg * {
+  margin-top: 10px;
 }
