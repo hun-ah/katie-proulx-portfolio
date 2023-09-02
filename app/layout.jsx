@@ -2,6 +2,7 @@ import './styles/globals.css';
 import './styles/reset.css';
 import { Public_Sans } from 'next/font/google';
 import { MenuProvider } from './components/contexts/MenuContext';
+import { ModalProvider } from './components/contexts/ModalContext';
 import Navbar from './components/nav/navbar/Navbar';
 import Footer from './components/footer/Footer';
 import MobileMenu from './components/nav/mobile-menu/MobileMenu';
@@ -21,13 +22,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body className={publicSans.className}>
-        <MenuProvider>
-          <Navbar />
-          <MobileMenu />
-          <ContactModal />
-          {children}
-          <Footer />
-        </MenuProvider>
+        <ModalProvider>
+          <MenuProvider>
+            <Navbar />
+            <MobileMenu />
+            <ContactModal />
+            {children}
+            <Footer />
+          </MenuProvider>
+        </ModalProvider>
       </body>
     </html>
   );
