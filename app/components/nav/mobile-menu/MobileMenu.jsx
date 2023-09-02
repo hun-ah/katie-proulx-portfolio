@@ -1,24 +1,24 @@
 'use client';
 import styles from './mobilemenu.module.css';
 import Link from 'next/link';
-import { useEffect } from 'react';
+import { useEffect, useCallback } from 'react';
 import { useAppContext as MenuContext } from '../../contexts/MenuContext';
 
 const MobileMenu = () => {
   const { isOpen, setIsOpen } = MenuContext();
   const showMenu = isOpen && `${styles.fadeIn}`;
   const menuItems = [
-    { name: 'Project Name1', href: '/' },
-    { name: 'Project Name2', href: '/' },
-    { name: 'Project Name3', href: '/' },
+    { id: 'page', name: 'Project Name1', href: '/' },
+    { id: 'page', name: 'Project Name2', href: '/' },
+    { id: 'page', name: 'Project Name3', href: '/' },
     { id: 'about', name: 'About' },
-    { id: 'close', name: 'Contact' },
+    { name: 'Contact' },
     { id: 'external', name: 'Linkedin' },
   ];
 
-  const closeMenu = () => {
+  const closeMenu = useCallback(() => {
     setIsOpen(false);
-  };
+  }, [setIsOpen]);
 
   const scrollToTarget = () => {
     const targetSection = document.getElementById('about');
@@ -37,6 +37,14 @@ const MobileMenu = () => {
     };
   }, [isOpen]);
 
+  useEffect(() => {
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 600) {
+        closeMenu();
+      }
+    });
+  }, [closeMenu]);
+
   return (
     <nav className={`${styles.container} ${isOpen ? showMenu : ''}`}>
       <menu className={styles.menu}>
@@ -51,13 +59,15 @@ const MobileMenu = () => {
                 {item.name}
               </a>
             </li>
-          ) : item.id == 'close' ? (
+          ) : item.id == 'page' ? (
             <li
               className={`${styles.menuItem} headingBold`}
               key={item.name}
-              onClick={closeMenu}
+              onClick={() => {
+                closeMenu();
+              }}
             >
-              {item.name}
+              <Link href={`${item.href}`}>{item.name}</Link>
             </li>
           ) : (
             <li
@@ -68,7 +78,7 @@ const MobileMenu = () => {
                 item.id == 'about' && scrollToTarget();
               }}
             >
-              <Link href={`${item.href}`}>{item.name}</Link>
+              {item.name}
             </li>
           )
         )}
