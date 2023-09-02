@@ -12,7 +12,7 @@ const Intro = () => {
         src='/headshot.jpg'
       />
       <div>
-        <h1 className='headingBlack'>katie proulx</h1>
+        <h1 className={`${styles.heading} headingBlack`}>katie proulx</h1>
         <ul className={styles.links}>
           <li className={`${styles.introLink} link`}>Contact</li>
           <li className={`${styles.introLink} link`}>
