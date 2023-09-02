@@ -1,6 +1,7 @@
 'use client';
 import styles from './modal.module.css';
 import Image from 'next/image';
+import { useEffect } from 'react';
 import { useAppContext as ModalContext } from '@/app/components/contexts/ModalContext';
 
 const ContactModal = () => {
@@ -10,6 +11,16 @@ const ContactModal = () => {
   const closeModal = () => {
     setOpenContactModal(false);
   };
+
+  useEffect(() => {
+    // prevent scroll when mobile nav is open
+    document.body.style.overflow = openContactModal && 'hidden';
+
+    return () => {
+      // restore default body overflow on unmount
+      document.body.style.overflow = '';
+    };
+  }, [openContactModal]);
 
   return (
     <div className={`${styles.container} ${openContactModal ? showModal : ''}`}>
