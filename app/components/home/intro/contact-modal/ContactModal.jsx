@@ -23,7 +23,10 @@ const ContactModal = () => {
   }, [openContactModal]);
 
   return (
-    <div className={`${styles.container} ${openContactModal ? showModal : ''}`}>
+    <div
+      className={`${styles.container} ${openContactModal ? showModal : ''}`}
+      onClick={closeModal}
+    >
       <div className={styles.modal}>
         <a href='mailto:kdotproulx@gmail.com'>kdotproulx@gmail.com</a>
         <div className={styles.btnContainer}>
