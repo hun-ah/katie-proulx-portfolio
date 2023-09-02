@@ -8,9 +8,9 @@ const MobileMenu = () => {
   const { isOpen, setIsOpen } = MenuContext();
   const showMenu = isOpen && `${styles.fadeIn}`;
   const menuItems = [
-    { name: 'Project Name1' },
-    { name: 'Project Name2' },
-    { name: 'Project Name3' },
+    { name: 'Project Name1', href: '/' },
+    { name: 'Project Name2', href: '/' },
+    { name: 'Project Name3', href: '/' },
     { id: 'about', name: 'About' },
     { id: 'close', name: 'Contact' },
     { id: 'external', name: 'Linkedin' },
@@ -68,7 +68,7 @@ const MobileMenu = () => {
                 item.id == 'about' && scrollToTarget();
               }}
             >
-              <Link href='/'>{item.name}</Link>
+              <Link href={`${item.href}`}>{item.name}</Link>
             </li>
           )
         )}
