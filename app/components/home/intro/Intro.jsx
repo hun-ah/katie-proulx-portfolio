@@ -1,8 +1,15 @@
 import styles from './intro.module.css';
 import Image from 'next/image';
 import Icon from './icon/Icon';
+import { useAppContext as ModalContext } from '@/app/components/contexts/ModalContext';
 
 const Intro = () => {
+  const { setOpenContactModal } = ModalContext();
+
+  const openModal = () => {
+    setOpenContactModal(true);
+  };
+
   return (
     <main className={styles.container}>
       <Image
@@ -15,7 +22,9 @@ const Intro = () => {
       <div>
         <h1 className={`${styles.heading} headingBlack`}>katie proulx</h1>
         <ul className={styles.links}>
-          <li className={`${styles.introLink} link`}>Contact</li>
+          <li className={`${styles.introLink} link`} onClick={openModal}>
+            Contact
+          </li>
           <li className={`${styles.introLink} link`}>
             <a
               href='https://www.linkedin.com/in/katie-proulx-46080416/'
