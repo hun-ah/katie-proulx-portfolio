@@ -1,5 +1,6 @@
 import styles from './intro.module.css';
 import Image from 'next/image';
+import Icon from './icon/Icon';
 
 const Intro = () => {
   return (
@@ -21,6 +22,7 @@ const Intro = () => {
               target='_blank'
             >
               Linkedin
+              <Icon className={styles.externalLink} />
             </a>
           </li>
         </ul>
