@@ -1,15 +1,36 @@
 'use client';
 import styles from './modal.module.css';
 import Image from 'next/image';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useAppContext as ModalContext } from '@/app/components/contexts/ModalContext';
 
 const ContactModal = () => {
   const { openContactModal, setOpenContactModal } = ModalContext();
   const showModal = openContactModal && `${styles.fadeIn}`;
+  const [copyEmailSuccess, setEmailCopySuccess] = useState('');
+  const email = 'kdotproulx@gmail.com';
+  const showText = copyEmailSuccess ? copyEmailSuccess : 'kdotproulx@gmail.com';
+
+  const handleCopyClick = async () => {
+    try {
+      await navigator.clipboard.writeText(email);
+      setEmailCopySuccess('Copied!');
+      setTimeout(() => {
+        setEmailCopySuccess('');
+      }, 700);
+    } catch (err) {
+      console.error('Failed to copy text: ', err);
+      setEmailCopySuccess('Copy failed');
+    }
+  };
 
   const closeModal = () => {
     setOpenContactModal(false);
+  };
+
+  // prevent closeModal function propagating to the modal div itself
+  const stopPropagation = (e) => {
+    e.stopPropagation();
   };
 
   useEffect(() => {
@@ -27,8 +48,13 @@ const ContactModal = () => {
       className={`${styles.container} ${openContactModal ? showModal : ''}`}
       onClick={closeModal}
     >
-      <div className={styles.modal}>
-        <a href='mailto:kdotproulx@gmail.com'>kdotproulx@gmail.com</a>
+      <div className={styles.modal} onClick={stopPropagation}>
+        <a
+          href='mailto:kdotproulx@gmail.com'
+          className={copyEmailSuccess && `${styles.noUnderline}`}
+        >
+          {showText}
+        </a>
         <div className={styles.btnContainer}>
           <button
             className={`${styles.btn} paragraphRegular`}
@@ -43,7 +69,10 @@ const ContactModal = () => {
             />
             close
           </button>
-          <button className={`${styles.btn} paragraphRegular`}>
+          <button
+            className={`${styles.btn} paragraphRegular`}
+            onClick={handleCopyClick}
+          >
             <Image
               alt='copy icon'
               height={16}
