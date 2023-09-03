@@ -37,6 +37,15 @@
   font-weight: var(--fontWeightBold);
   line-height: var(--lineHeight1);
   text-decoration-color: var(--textAccent);
+  transition: 0.3s ease;
+}
+
+.modal a:hover {
+  color: var(--textAccent);
+}
+
+.noUnderline {
+  text-decoration: none;
 }
 
 .btnContainer {
