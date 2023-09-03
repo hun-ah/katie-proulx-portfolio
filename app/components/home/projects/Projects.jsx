@@ -8,18 +8,21 @@ const Projects = () => {
       company: 'company1',
       img: '/headshot.jpg',
       title: 'Building something something yes',
+      href: '/projects/project-1',
     },
     {
       id: 2,
       company: 'company2',
       img: '/headshot.jpg',
       title: 'Building something something yes',
+      href: '/',
     },
     {
       id: 3,
       company: 'company3',
       img: '/headshot.jpg',
       title: 'Building something something yes',
+      href: '/',
     },
   ];
 
@@ -32,6 +35,7 @@ const Projects = () => {
             company={project.company}
             title={project.title}
             img={project.img}
+            href={project.href}
           />
         ))}
       </ul>
