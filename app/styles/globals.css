@@ -31,6 +31,7 @@
 
   /* ------- button ------- */
   --buttonDefault: var(--neutral100);
+  --buttonHover: var(--neutral200);
 
   /* ------- surface ------- */
   --siteBgPrimary: var(--white);
