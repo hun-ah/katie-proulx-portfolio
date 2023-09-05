@@ -49,7 +49,9 @@
   --fontWeightBlack: 900;
 
   --fontSizeReg: 14px;
+  --fontSizeMed: 17px;
   --fontSizeLarge: 24px;
+  --fontSizeXL: 32px;
 
   --lineHeight1: 140%;
   --lineHeight2: 110%;
@@ -83,6 +85,12 @@ button {
   line-height: var(--lineHeight1);
 }
 
+.paragraphLarge {
+  font-size: var(--fontSizeMed);
+  font-weight: var(--fontWeightReg);
+  line-height: var(--lineHeight1);
+}
+
 .paragraphBold {
   font-weight: var(--fontWeightBold);
   font-size: var(--fontSizeReg);
@@ -92,6 +100,13 @@ button {
 .headingBold {
   font-weight: var(--fontWeightBold);
   font-size: var(--fontSizeLarge);
+  letter-spacing: var(--letterSpacing);
+  line-height: var(--lineHeight2);
+}
+
+.headingBoldLarge {
+  font-size: var(--fontSizeXL);
+  font-weight: var(--fontWeightBold);
   letter-spacing: var(--letterSpacing);
   line-height: var(--lineHeight2);
 }
