@@ -3,6 +3,7 @@
   padding: 0 var(--paddingSide);
   padding-bottom: var(--paddingTopBottom);
   max-width: 900px;
+  animation-delay: 500ms;
 }
 
 .projectContainer {
