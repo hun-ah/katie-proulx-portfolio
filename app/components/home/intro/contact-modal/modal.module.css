@@ -31,6 +31,11 @@
   width: 286px;
 }
 
+.email {
+  align-items: center;
+  display: flex;
+}
+
 .modal a {
   color: var(--textPrimary);
   font-size: 17px;
@@ -68,8 +73,7 @@
 }
 
 .btn:hover {
-  /* change this */
-  background: var(--textAccent);
+  background: var(--buttonHover);
 }
 
 .btn:last-of-type {
