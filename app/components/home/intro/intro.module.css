@@ -8,6 +8,18 @@
   max-width: 900px;
 }
 
+.customAnimation {
+  animation-name: myCustomAnimation;
+  animation-duration: 800ms;
+}
+
+@keyframes myCustomAnimation {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+}
+
 .container p {
   max-width: 500px;
 }
