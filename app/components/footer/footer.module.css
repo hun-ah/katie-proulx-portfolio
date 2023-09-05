@@ -1,0 +1,29 @@
+.container {
+  background: var(--siteBgSecondary);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  height: 80px;
+  width: 100%;
+}
+
+.footer {
+  align-items: center;
+  display: flex;
+  height: inherit;
+  justify-content: space-between;
+  margin: auto;
+  padding: 0 var(--paddingSide);
+  max-width: 900px;
+}
+
+.footer span {
+  color: var(--textPrimaryInverse);
+}
+
+.iconContainer {
+  display: flex;
+  gap: 8px;
+}
+
+.icon {
+  cursor: pointer;
+}
