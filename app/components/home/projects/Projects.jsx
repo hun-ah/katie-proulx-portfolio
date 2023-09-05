@@ -1,4 +1,5 @@
 import styles from './projects.module.css';
+import 'animate.css';
 import Project from './project/Project';
 
 const Projects = () => {
@@ -27,7 +28,9 @@ const Projects = () => {
   ];
 
   return (
-    <section className={styles.container}>
+    <section
+      className={`${styles.container} animate__animated animate__fadeIn animate__fast`}
+    >
       <ul className={styles.projectContainer}>
         {projects.map((project) => (
           <Project
