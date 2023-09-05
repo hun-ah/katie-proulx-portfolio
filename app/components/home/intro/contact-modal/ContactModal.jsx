@@ -49,12 +49,23 @@ const ContactModal = () => {
       onClick={closeModal}
     >
       <div className={styles.modal} onClick={stopPropagation}>
-        <a
-          href='mailto:kdotproulx@gmail.com'
-          className={copyEmailSuccess && `${styles.noUnderline}`}
-        >
-          {showText}
-        </a>
+        <div className={styles.email}>
+          {!copyEmailSuccess && (
+            <Image
+              alt='envelope icon'
+              height={16}
+              width={16}
+              src='mail.svg'
+              className={styles.icon}
+            />
+          )}
+          <a
+            href='mailto:kdotproulx@gmail.com'
+            className={copyEmailSuccess && `${styles.noUnderline}`}
+          >
+            {showText}
+          </a>
+        </div>
         <div className={styles.btnContainer}>
           <button
             className={`${styles.btn} paragraphRegular`}
