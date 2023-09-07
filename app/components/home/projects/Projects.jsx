@@ -1,32 +1,9 @@
-import styles from './projects.module.css';
 import 'animate.css';
+import styles from './projects.module.css';
 import Project from './project/Project';
+import { projects } from '@/app/data/projectDetails';
 
 const Projects = () => {
-  const projects = [
-    {
-      id: 1,
-      company: 'company1',
-      img: '/headshot.jpg',
-      title: 'Building something something yes',
-      href: '/projects/project-1',
-    },
-    {
-      id: 2,
-      company: 'company2',
-      img: '/headshot.jpg',
-      title: 'Building something something yes',
-      href: '/',
-    },
-    {
-      id: 3,
-      company: 'company3',
-      img: '/headshot.jpg',
-      title: 'Building something something yes',
-      href: '/',
-    },
-  ];
-
   return (
     <section
       className={`${styles.container} animate__animated animate__fadeIn animate__fast`}
