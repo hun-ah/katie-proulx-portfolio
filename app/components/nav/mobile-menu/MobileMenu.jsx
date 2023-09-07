@@ -19,13 +19,6 @@ const MobileMenu = () => {
     setOpenContactModal(true);
   };
 
-  const scrollToTarget = () => {
-    const targetSection = document.getElementById('about');
-    if (targetSection) {
-      targetSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   useEffect(() => {
     // prevent scroll when mobile nav is open
     document.body.style.overflow = isOpen && 'hidden';
@@ -58,7 +51,7 @@ const MobileMenu = () => {
                 {item.name}
               </a>
             </li>
-          ) : item.id == 'page' ? (
+          ) : item.id == 'page' || item.id == 'about' ? (
             <li
               className={`${styles.menuItem} headingBold`}
               key={item.name}
@@ -75,7 +68,6 @@ const MobileMenu = () => {
               onClick={() => {
                 closeMenu();
                 item.id == 'contact' && openModal();
-                item.id == 'about' && scrollToTarget();
               }}
             >
               {item.name}
