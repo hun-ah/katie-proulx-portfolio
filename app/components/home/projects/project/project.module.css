@@ -27,6 +27,10 @@
   cursor: pointer;
 }
 
+.projectImage {
+  border-radius: 4px;
+}
+
 @media screen and (min-width: 900px) {
   .textContainer {
     max-width: 366px;
