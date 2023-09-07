@@ -12,6 +12,8 @@ const Navbar = () => {
     setOpenContactModal(false);
   };
 
+  const navlinks = [{ name: 'work' }, { name: 'about' }, { name: 'contact' }];
+
   return (
     <header className={styles.container}>
       <section className={styles.section}>
@@ -23,6 +25,16 @@ const Navbar = () => {
             height={12}
           />
         </Link>
+        <ul className={styles.navlinks}>
+          {navlinks.map((navlink) => (
+            <li
+              key={navlink.name}
+              className={` ${styles.navlink} paragraphRegular`}
+            >
+              {navlink.name}
+            </li>
+          ))}
+        </ul>
         <Hamburger />
       </section>
     </header>
