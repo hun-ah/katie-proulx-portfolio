@@ -1,0 +1,37 @@
+.container {
+  color: var(--textPrimary);
+}
+
+.container span {
+  display: inline-block;
+  color: var(--textSecondary);
+  margin-bottom: 8px;
+}
+
+.container h1,
+.container p {
+  max-width: 500px;
+}
+
+.container h1 {
+  margin-bottom: 16px;
+}
+
+.container p {
+  margin-bottom: 32px;
+}
+
+.projectDetails {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 64px;
+}
+
+@media (max-width: 600px) {
+  .projectDetails {
+    gap: 24px;
+  }
+  .projectDetails li {
+    flex-basis: calc(50% - 12px);
+  }
+}
