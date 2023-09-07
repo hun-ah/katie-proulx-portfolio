@@ -10,15 +10,35 @@
 .section {
   align-items: center;
   display: flex;
+  justify-content: space-between;
   height: inherit;
   margin: auto;
-  padding-left: var(--paddingSide);
-  width: 900px;
+  max-width: 900px;
+  padding: 0 var(--paddingSide);
+}
+
+.navlinks {
+  display: flex;
+  gap: 16px;
+}
+
+.navlink {
+  color: var(--textPrimaryInverse);
+  cursor: pointer;
+}
+
+.navlink:hover {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 600px) {
   .section {
     justify-content: space-between;
+    padding: 0 0 0 var(--paddingSide);
     width: 100%;
+  }
+
+  .navlinks {
+    display: none;
   }
 }
