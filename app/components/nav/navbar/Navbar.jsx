@@ -16,13 +16,6 @@ const Navbar = () => {
     setOpenContactModal(false);
   };
 
-  const scrollToTarget = (target) => {
-    const targetSection = document.getElementById(target);
-    if (targetSection) {
-      targetSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   const navlinks = [{ name: 'work' }, { name: 'about' }, { name: 'contact' }];
 
   return (
@@ -37,19 +30,24 @@ const Navbar = () => {
           />
         </Link>
         <ul className={styles.navlinks}>
-          {navlinks.map((navlink) => (
-            <li
-              key={navlink.name}
-              className={`${styles.navlink} paragraphRegular`}
-              onClick={() => {
-                navlink.name == 'contact'
-                  ? openModal()
-                  : scrollToTarget(navlink.name);
-              }}
-            >
-              {navlink.name}
-            </li>
-          ))}
+          {navlinks.map((navlink) =>
+            navlink.name == 'contact' ? (
+              <li
+                key={navlink.name}
+                className={`${styles.navlink} paragraphRegular`}
+                onClick={openModal}
+              >
+                {navlink.name}
+              </li>
+            ) : (
+              <li
+                key={navlink.name}
+                className={`${styles.navlink} paragraphRegular`}
+              >
+                <Link href={`/#${navlink.name}`}>{navlink.name}</Link>
+              </li>
+            )
+          )}
         </ul>
         <Hamburger />
       </section>
