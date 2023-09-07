@@ -2,6 +2,7 @@
 import styles from './mobilemenu.module.css';
 import Link from 'next/link';
 import { useEffect, useCallback } from 'react';
+import { menuItems } from '@/app/data/menuItems';
 import { useAppContext as MenuContext } from '../../contexts/MenuContext';
 import { useAppContext as ModalContext } from '../../contexts/ModalContext';
 
@@ -9,14 +10,6 @@ const MobileMenu = () => {
   const { isOpen, setIsOpen } = MenuContext();
   const { setOpenContactModal } = ModalContext();
   const showMenu = isOpen && `${styles.fadeIn}`;
-  const menuItems = [
-    { id: 'page', name: 'Project Name1', href: '/' },
-    { id: 'page', name: 'Project Name2', href: '/' },
-    { id: 'page', name: 'Project Name3', href: '/' },
-    { id: 'about', name: 'About' },
-    { id: 'contact', name: 'Contact' },
-    { id: 'external', name: 'Linkedin' },
-  ];
 
   const closeMenu = useCallback(() => {
     setIsOpen(false);
