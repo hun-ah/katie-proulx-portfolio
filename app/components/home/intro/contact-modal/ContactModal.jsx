@@ -55,7 +55,7 @@ const ContactModal = () => {
               alt='envelope icon'
               height={16}
               width={16}
-              src='mail.svg'
+              src='/mail.svg'
               className={styles.icon}
             />
           )}
@@ -75,7 +75,7 @@ const ContactModal = () => {
               alt='close icon'
               height={16}
               width={16}
-              src='close.svg'
+              src='/close.svg'
               className={styles.icon}
             />
             close
@@ -88,7 +88,7 @@ const ContactModal = () => {
               alt='copy icon'
               height={16}
               width={16}
-              src='copy.svg'
+              src='/copy.svg'
               className={styles.icon}
             />
             copy

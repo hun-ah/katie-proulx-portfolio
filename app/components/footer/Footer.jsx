@@ -19,7 +19,7 @@ const Footer = () => {
             alt='mail logo'
             height={32}
             width={32}
-            src='footer-mail.svg'
+            src='/footer-mail.svg'
             className={styles.icon}
             onClick={openModal}
           />
@@ -31,7 +31,7 @@ const Footer = () => {
               alt='LinkedIn logo'
               height={32}
               width={32}
-              src='linkedin.svg'
+              src='/linkedin.svg'
               className={styles.icon}
             />
           </a>
