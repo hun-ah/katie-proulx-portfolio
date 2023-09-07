@@ -22,9 +22,11 @@
   gap: 16px;
 }
 
-.navlink {
+.navlink,
+.navlink a {
   color: var(--textPrimaryInverse);
   cursor: pointer;
+  text-decoration: none;
 }
 
 .navlink:hover {
