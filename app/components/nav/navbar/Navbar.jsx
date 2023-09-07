@@ -8,8 +8,19 @@ import { useAppContext as ModalContext } from '@/app/components/contexts/ModalCo
 const Navbar = () => {
   const { setOpenContactModal } = ModalContext();
 
+  const openModal = () => {
+    setOpenContactModal(true);
+  };
+
   const closeModal = () => {
     setOpenContactModal(false);
+  };
+
+  const scrollToTarget = (target) => {
+    const targetSection = document.getElementById(target);
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   const navlinks = [{ name: 'work' }, { name: 'about' }, { name: 'contact' }];
@@ -29,7 +40,12 @@ const Navbar = () => {
           {navlinks.map((navlink) => (
             <li
               key={navlink.name}
-              className={` ${styles.navlink} paragraphRegular`}
+              className={`${styles.navlink} paragraphRegular`}
+              onClick={() => {
+                navlink.name == 'contact'
+                  ? openModal()
+                  : scrollToTarget(navlink.name);
+              }}
             >
               {navlink.name}
             </li>
