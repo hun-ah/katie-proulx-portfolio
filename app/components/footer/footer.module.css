@@ -8,7 +8,7 @@
 .footer {
   align-items: center;
   display: flex;
-  height: inherit;
+  height: 79px;
   justify-content: space-between;
   margin: auto;
   padding: 0 var(--paddingSide);
@@ -16,7 +16,7 @@
 }
 
 .footer span {
-  color: var(--textPrimaryInverse);
+  color: var(--textSecondaryInverse);
 }
 
 .iconContainer {
