@@ -8,8 +8,8 @@ const Project = ({ company, title, img, href }) => {
       <Link href={`${href}`} className={styles.container}>
         <Image
           alt='headshot of Katie with her hand on her face, looking away from the camera'
-          className={styles.projectImage}
-          height={300}
+          className='imageBorderRadius heightAuto'
+          height={0}
           width={452}
           src={img}
         />
