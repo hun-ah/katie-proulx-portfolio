@@ -30,7 +30,7 @@ const ProjectHeader = () => {
   const values = Object.values(project);
 
   return (
-    <header className={styles.container}>
+    <header className={`${styles.container} customAnimation`}>
       <span className='paragraphRegular'>CompanyName</span>
       <h1 className='headingBoldLarge'>
         Building an app that makes something easier or whatever
