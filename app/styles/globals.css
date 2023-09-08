@@ -76,6 +76,7 @@ button {
   cursor: pointer;
 }
 
+/* ------- TEXT ------- */
 .link {
   font-weight: var(--fontWeightReg);
   font-size: var(--fontSizeReg);
@@ -120,4 +121,26 @@ button {
   font-size: var(--fontSizeLarge);
   letter-spacing: var(--letterSpacing);
   line-height: var(--lineHeight2);
+}
+
+/* ------- OTHER ------- */
+
+.imageBorderRadius {
+  border-radius: 4px;
+}
+
+.heightAuto {
+  height: auto;
+}
+
+.customAnimation {
+  animation-name: myCustomAnimation;
+  animation-duration: 800ms;
+}
+
+@keyframes myCustomAnimation {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
 }
