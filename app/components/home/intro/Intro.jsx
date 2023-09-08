@@ -11,7 +11,7 @@ const Intro = () => {
   };
 
   return (
-    <main className={`${styles.container} ${styles.customAnimation}`}>
+    <main className={`${styles.container} customAnimation`}>
       <Image
         alt='headshot of Katie with her hand on her face, looking away from the camera'
         className={styles.headshot}
