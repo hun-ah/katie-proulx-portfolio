@@ -7,7 +7,6 @@ const Projects = () => {
   return (
     <section
       className={`${styles.container} animate__animated animate__fadeIn animate__fast`}
-      id='work'
     >
       <ul className={styles.projectContainer}>
         {projects.map((project) => (
