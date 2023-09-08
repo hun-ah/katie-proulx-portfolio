@@ -1,7 +1,7 @@
 .container {
   cursor: pointer;
   display: flex;
-  gap: 32px;
+  gap: 24px;
   text-decoration: none;
 }
 
@@ -27,10 +27,6 @@
   cursor: pointer;
 }
 
-.projectImage {
-  border-radius: 4px;
-}
-
 @media screen and (min-width: 900px) {
   .textContainer {
     max-width: 366px;
@@ -42,8 +38,7 @@
     flex-direction: column;
   }
 
-  .projectImage {
+  .container img {
     width: 100%;
-    height: auto;
   }
 }
