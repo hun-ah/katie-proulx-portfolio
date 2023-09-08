@@ -44,7 +44,11 @@ const Navbar = () => {
                 key={navlink.name}
                 className={`${styles.navlink} paragraphRegular`}
               >
-                <Link href={`/#${navlink.name}`}>{navlink.name}</Link>
+                <Link
+                  href={`${navlink.name == 'work' ? '/' : `/#${navlink.name}`}`}
+                >
+                  {navlink.name}
+                </Link>
               </li>
             )
           )}
