@@ -22,22 +22,22 @@ export const projectDetails = [
 export const projects = [
   {
     id: 1,
-    company: 'company1',
-    img: '/headshot.jpg',
-    title: 'Building something something yes',
-    href: '/projects/project-1',
-  },
-  {
-    id: 2,
-    company: 'company2',
-    img: '/headshot.jpg',
+    company: 'Bevalix',
+    img: '/bevalix/img-main.jpg',
     title: 'Building something something yes',
     href: '/projects/project-2',
   },
   {
+    id: 2,
+    company: 'theScore',
+    img: '/thescore/img-main.jpg',
+    title: 'Building something something yes',
+    href: '/projects/theScore',
+  },
+  {
     id: 3,
     company: 'company3',
-    img: '/headshot.jpg',
+    img: '/thescore/img-main.jpg',
     title: 'Building something something yes',
     href: '/projects/project-3',
   },

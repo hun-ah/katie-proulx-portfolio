@@ -8,7 +8,6 @@
   padding: var(--paddingTopBottom) var(--paddingSide);
 }
 
-.columnReverse {
-  display: flex;
-  flex-direction: column-reverse;
+.pageContent {
+  animation-delay: 500ms;
 }

@@ -17,7 +17,7 @@ const ProjectHeader = () => {
 
   let project;
   switch (path) {
-    case 'project-1':
+    case 'theScore':
       project = projectDetails[0];
       break;
     case 'project-2':
@@ -31,7 +31,7 @@ const ProjectHeader = () => {
 
   return (
     <header className={`${styles.container} customAnimation`}>
-      <span className='paragraphRegular'>CompanyName</span>
+      <span className='paragraphRegular'>{project.client}</span>
       <h1 className='headingBoldLarge'>
         Building an app that makes something easier or whatever
       </h1>

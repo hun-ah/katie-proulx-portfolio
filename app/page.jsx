@@ -7,7 +7,11 @@ import Projects from './components/home/projects/Projects';
 
 const HomePage = () => {
   useEffect(() => {
-    window.history.scrollRestoration = 'manual';
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'instant',
+    });
   }, []);
 
   return (
