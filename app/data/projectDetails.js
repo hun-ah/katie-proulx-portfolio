@@ -1,9 +1,11 @@
 export const projectDetails = [
   {
-    client: "theScore",
+    client: "theScore | Bet",
     industry: "Sports betting",
     myRole: "Product design",
     duration: "3 months",
+    description:
+      "theScore | Bet is a major Canadian sports betting app that launched in April 2022. A major feature I worked to design and implement post-launch was Parlay+. This feature was highly anticipated and allows users to create parlay bets by combining selections from the same game.",
   },
   {
     client: "Buddy Ins",
