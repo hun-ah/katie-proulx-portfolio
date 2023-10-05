@@ -1,33 +1,52 @@
-'use client';
-import 'animate.css';
-import styles from './layout.module.css';
-import ProjectHeader from '../components/project-header/ProjectHeader';
-import Image from 'next/image';
-import { useEffect } from 'react';
+"use client";
+import "animate.css";
+import styles from "./layout.module.css";
+import ProjectHeader from "../components/project-header/ProjectHeader";
+import Image from "next/image";
+import { projectDetails } from "@/app/data/projectDetails";
+import { useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 const ProjectLayout = ({ children }) => {
+  const pathname = usePathname();
+  const path = pathname.split("/").slice(-1).toString();
+
+  let project;
+  switch (path) {
+    case "theScore":
+      project = projectDetails[0];
+      break;
+    case "project-2":
+      project = projectDetails[1];
+      break;
+    case "project-3":
+      project = projectDetails[2];
+  }
+
   useEffect(() => {
     window.scrollTo({
       top: 0,
       left: 0,
-      behavior: 'instant',
+      behavior: "instant",
     });
   }, []);
 
   return (
     <main className={styles.container}>
-      <ProjectHeader />
+      <section className={styles.innerContainer}>
+        <ProjectHeader />
+      </section>
+      <Image
+        alt={project.alt}
+        height={1000}
+        width={800}
+        src={project.mainImg}
+        className={`heightAuto ${styles.mainImg} animate__animated animate__fadeIn animate__fast`}
+        unoptimized={true}
+      />
       <div
-        className={`${styles.pageContent} animate__animated animate__fadeIn animate__fast`}
+        className={`${styles.pageContent} ${styles.innerContainer} animate__animated animate__fadeIn animate__fast`}
       >
-        <Image
-          alt=''
-          height={0}
-          width={852}
-          src='/headshot.jpg'
-          className='imageBorderRadius heightAuto'
-          style={{ width: '100%' }}
-        />
         {children}
       </div>
     </main>
