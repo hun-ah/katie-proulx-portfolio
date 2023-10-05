@@ -32,9 +32,7 @@ const ProjectHeader = () => {
   return (
     <header className={`${styles.container} customAnimation`}>
       <span className="paragraphRegular">{project.client}</span>
-      <h1 className="headingBoldLarge">
-        Building an app that makes something easier or whatever
-      </h1>
+      <h1 className="headingBoldLarge">{project.title}</h1>
       <p className="paragraphLarge">{project.description}</p>
       <ul className={styles.projectDetails}>
         {titles.map((title, index) => (
