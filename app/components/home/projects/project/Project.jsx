@@ -12,6 +12,7 @@ const Project = ({ company, title, img, href }) => {
           height={0}
           width={452}
           src={img}
+          unoptimized={true}
         />
         <div className={styles.textContainer}>
           <h2 className={`${styles.company} paragraphRegular`}>{company}</h2>
