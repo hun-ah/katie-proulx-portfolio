@@ -1,0 +1,26 @@
+.container {
+  background: var(--siteBgSecondary);
+  color: var(--textPrimaryInverse);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.innerContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: var(--paddingTopBottom) var(--paddingSide);
+  width: 327px;
+  text-align: center;
+}
+
+.speechBubble {
+  font-size: 24px;
+}
+
+.contact {
+  text-decoration: underline;
+  background: none;
+  color: var(--textPrimaryInverse);
+}
