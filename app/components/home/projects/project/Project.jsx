@@ -1,14 +1,14 @@
-import styles from './project.module.css';
-import Image from 'next/image';
-import Link from 'next/link';
+import styles from "./project.module.css";
+import Image from "next/image";
+import Link from "next/link";
 
 const Project = ({ company, title, img, href }) => {
   return (
     <li>
       <Link href={`${href}`} className={styles.container}>
         <Image
-          alt='headshot of Katie with her hand on her face, looking away from the camera'
-          className='imageBorderRadius heightAuto'
+          alt="headshot of Katie with her hand on her face, looking away from the camera"
+          className="imageBorderRadius heightAuto"
           height={0}
           width={452}
           src={img}
