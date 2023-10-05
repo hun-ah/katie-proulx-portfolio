@@ -102,6 +102,12 @@ button {
   line-height: var(--lineHeight1);
 }
 
+.paragraphLargeBold {
+  font-weight: var(--fontWeightBold);
+  font-size: var(--fontSizeMed);
+  line-height: var(--lineHeight1);
+}
+
 .headingBold {
   font-weight: var(--fontWeightBold);
   font-size: var(--fontSizeLarge);
