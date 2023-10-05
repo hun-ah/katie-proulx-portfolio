@@ -1,7 +1,7 @@
-import 'animate.css';
-import styles from './projects.module.css';
-import Project from './project/Project';
-import { projects } from '@/app/data/projectDetails';
+import "animate.css";
+import styles from "./projects.module.css";
+import Project from "./project/Project";
+import { projects } from "@/app/data/projectDetails";
 
 const Projects = () => {
   return (
