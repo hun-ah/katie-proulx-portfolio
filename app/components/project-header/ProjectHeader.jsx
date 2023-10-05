@@ -1,29 +1,29 @@
-'use client';
-import styles from './project-header.module.css';
-import ProjectDetail from './project-details/ProjectDetail';
-import { projectDetails } from '@/app/data/projectDetails';
-import { usePathname } from 'next/navigation';
+"use client";
+import styles from "./project-header.module.css";
+import ProjectDetail from "./project-details/ProjectDetail";
+import { projectDetails } from "@/app/data/projectDetails";
+import { usePathname } from "next/navigation";
 
 const ProjectHeader = () => {
   const pathname = usePathname();
-  const path = pathname.split('/').slice(-1).toString();
+  const path = pathname.split("/").slice(-1).toString();
 
   const titles = [
-    { icon: '/user-circle.svg', heading: 'Client' },
-    { icon: '/briefcase.svg', heading: 'Industry' },
-    { icon: '/user-circle.svg', heading: 'My role' },
-    { icon: '/calendar.svg', heading: 'Duration' },
+    { icon: "/user-circle.svg", heading: "Client" },
+    { icon: "/briefcase.svg", heading: "Industry" },
+    { icon: "/user-circle.svg", heading: "My role" },
+    { icon: "/calendar.svg", heading: "Duration" },
   ];
 
   let project;
   switch (path) {
-    case 'theScore':
+    case "theScore":
       project = projectDetails[0];
       break;
-    case 'project-2':
+    case "project-2":
       project = projectDetails[1];
       break;
-    case 'project-3':
+    case "project-3":
       project = projectDetails[2];
   }
 
@@ -31,14 +31,11 @@ const ProjectHeader = () => {
 
   return (
     <header className={`${styles.container} customAnimation`}>
-      <span className='paragraphRegular'>{project.client}</span>
-      <h1 className='headingBoldLarge'>
+      <span className="paragraphRegular">{project.client}</span>
+      <h1 className="headingBoldLarge">
         Building an app that makes something easier or whatever
       </h1>
-      <p className='paragraphLarge'>
-        [description] TheScore Bet and Barstool Sportsbooks are two popular
-        sports betting apps with millions of users in Canada and the US.{' '}
-      </p>
+      <p className="paragraphLarge">{project.description}</p>
       <ul className={styles.projectDetails}>
         {titles.map((title, index) => (
           <ProjectDetail
