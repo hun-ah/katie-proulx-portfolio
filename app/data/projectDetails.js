@@ -9,21 +9,22 @@ export const projectDetails = [
     title:
       "Transforming sports betting with a feature highly anticipated by users",
     mainImg: "/thescore/screen1.jpg",
-    alt: "Parlay+ graphic with 6 mobile phones surrounding Parlary+ and theScore BET logo",
+    secondaryImg: "/thescore/screen2.jpg",
+    alt: "Parlay+ graphic",
     tldrCards: [
       {
         id: 1,
-        icon: "/theScore/dollar-sign.svg",
+        icon: "/theScore/icons/dollar-sign.svg",
         text: "Increased GGR (Gross Gaming Revenue)",
       },
       {
         id: 2,
-        icon: "/theScore/coins.svg",
+        icon: "/theScore/icons/coins.svg",
         text: "Increased Number of Bets Placed Per Month",
       },
       {
         id: 3,
-        icon: "/theScore/user-switch.svg",
+        icon: "/theScore/icons/user-switch.svg",
         text: "Improved retention & acquisition",
       },
     ],
