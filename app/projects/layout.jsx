@@ -2,6 +2,7 @@
 import "animate.css";
 import styles from "./layout.module.css";
 import ProjectHeader from "../components/project-header/ProjectHeader";
+import TLDR from "../components/tldr/TLDR";
 import Image from "next/image";
 import { projectDetails } from "@/app/data/projectDetails";
 import { useEffect } from "react";
@@ -33,9 +34,7 @@ const ProjectLayout = ({ children }) => {
 
   return (
     <main className={styles.container}>
-      <section className={styles.innerContainer}>
-        <ProjectHeader />
-      </section>
+      <ProjectHeader />
       <Image
         alt={project.alt}
         height={1000}
@@ -44,8 +43,9 @@ const ProjectLayout = ({ children }) => {
         className={`heightAuto ${styles.mainImg} animate__animated animate__fadeIn animate__fast`}
         unoptimized={true}
       />
+      <TLDR />
       <div
-        className={`${styles.pageContent} ${styles.innerContainer} animate__animated animate__fadeIn animate__fast`}
+        className={`${styles.pageContent} projectInnerContainer animate__animated animate__fadeIn animate__fast`}
       >
         {children}
       </div>
