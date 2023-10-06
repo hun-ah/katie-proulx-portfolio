@@ -30,7 +30,9 @@ const ProjectHeader = () => {
   const values = Object.values(project);
 
   return (
-    <header className={`${styles.container} customAnimation`}>
+    <header
+      className={`${styles.container} projectInnerContainer customAnimation`}
+    >
       <span className="paragraphRegular">{project.client}</span>
       <h1 className="headingBoldLarge">{project.title}</h1>
       <p className="paragraphLarge">{project.description}</p>
