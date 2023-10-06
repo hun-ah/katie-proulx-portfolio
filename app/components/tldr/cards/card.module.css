@@ -1,1 +1,9 @@
-
+.card {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 16px;
+  border: 1px solid var(--textAccent);
+  border-radius: 8px;
+  padding: 32px;
+}
