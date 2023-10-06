@@ -5,7 +5,7 @@ const Card = ({ icon, text }) => {
   return (
     <li className={styles.card}>
       <Image alt="" height={40} width={40} src={icon} />
-      <span>{text}</span>
+      <h4 className="headingBold">{text}</h4>
     </li>
   );
 };
