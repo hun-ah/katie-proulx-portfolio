@@ -48,6 +48,7 @@
   --fontWeightBold: 700;
   --fontWeightBlack: 900;
 
+  --fontSizeSmall: 12px;
   --fontSizeReg: 14px;
   --fontSizeMed: 17px;
   --fontSizeLarge: 24px;
@@ -127,6 +128,14 @@ button {
   font-size: var(--fontSizeLarge);
   letter-spacing: var(--letterSpacing);
   line-height: var(--lineHeight2);
+}
+
+.overline {
+  font-size: var(--fontSizeSmall);
+  font-weight: var(--fontWeightBold);
+  line-height: var(--lineHeight1);
+  letter-spacing: 2.4px;
+  color: var(--textAccent);
 }
 
 /* ------- OTHER ------- */
