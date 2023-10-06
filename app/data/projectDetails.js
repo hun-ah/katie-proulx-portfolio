@@ -10,6 +10,25 @@ export const projectDetails = [
       "Transforming sports betting with a feature highly anticipated by users",
     mainImg: "/thescore/screen1.jpg",
     alt: "Parlay+ graphic with 6 mobile phones surrounding Parlary+ and theScore BET logo",
+    tldrCards: [
+      {
+        id: 1,
+        icon: "/theScore/dollar-sign.svg",
+        text: "Increased GGR (Gross Gaming Revenue)",
+      },
+      {
+        id: 2,
+        icon: "/theScore/coins.svg",
+        text: "Increased Number of Bets Placed Per Month",
+      },
+      {
+        id: 3,
+        icon: "/theScore/user-switch.svg",
+        text: "Improved retention & acquisition",
+      },
+    ],
+    tldrBlurb:
+      "We accomplished our 3 primary goals when we brought Parlay+ to market. With such a highly requested feature, we already knew there was a major user need; but we still had to execute it in an intuitive way with a very small learning curve to ensure the feature was adopted successfully.",
   },
   {
     client: "Buddy Ins",
