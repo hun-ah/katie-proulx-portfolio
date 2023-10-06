@@ -34,7 +34,7 @@ const ProjectLayout = ({ children }) => {
 
   return (
     <main className={styles.container}>
-      <ProjectHeader />
+      <ProjectHeader project={project} />
       <Image
         alt={project.alt}
         height={1000}
@@ -43,7 +43,7 @@ const ProjectLayout = ({ children }) => {
         className={`heightAuto ${styles.mainImg} animate__animated animate__fadeIn animate__fast`}
         unoptimized={true}
       />
-      <TLDR />
+      <TLDR project={project} />
       <div
         className={`${styles.pageContent} projectInnerContainer animate__animated animate__fadeIn animate__fast`}
       >
