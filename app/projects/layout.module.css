@@ -13,14 +13,3 @@
 .mainImg {
   width: 100%;
 }
-
-.innerContainer {
-  padding: 0 var(--paddingSide);
-}
-
-@media screen and (min-width: 900px) {
-  .innerContainer {
-    width: 900px;
-    margin: auto;
-  }
-}
