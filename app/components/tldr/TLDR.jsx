@@ -8,9 +8,9 @@ const TLDR = ({ project }) => {
     <section className={`${styles.TLDR} projectInnerContainer`}>
       <div className={styles.titleText}>
         <h3 className={`${styles.outcomes} overline`}>OUTCOMES</h3>
-        <p className="headingBold">TLDR;</p>
+        <h3 className="headingBold">TLDR;</h3>
       </div>
-      <ul>
+      <ul className={styles.cardContainer}>
         {tldrCards.map((card) => (
           <Card key={card.id} icon={card.icon} text={card.text} />
         ))}
