@@ -44,6 +44,16 @@ const ProjectLayout = ({ children }) => {
         unoptimized={true}
       />
       <TLDR project={project} />
+      <div className="projectInnerContainer">
+        <Image
+          alt={project.alt}
+          height={1000}
+          width={800}
+          src={project.secondaryImg}
+          className={`heightAuto ${styles.mainImg}`}
+          unoptimized={true}
+        />
+      </div>
       <div
         className={`${styles.pageContent} projectInnerContainer animate__animated animate__fadeIn animate__fast`}
       >
