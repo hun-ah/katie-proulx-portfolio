@@ -153,6 +153,17 @@ button {
   animation-duration: 800ms;
 }
 
+.projectInnerContainer {
+  padding: 0 var(--paddingSide);
+}
+
+@media screen and (min-width: 900px) {
+  .projectInnerContainer {
+    width: 900px;
+    margin: auto;
+  }
+}
+
 @keyframes myCustomAnimation {
   from {
     transform: translateY(100px);
