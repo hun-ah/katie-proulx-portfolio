@@ -10,3 +10,15 @@
   flex-direction: column;
   gap: 16px;
 }
+
+.cardContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+@media screen and (max-width: 730px) {
+  .cardContainer {
+    flex-direction: column;
+  }
+}
