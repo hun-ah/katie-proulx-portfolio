@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.doubleContainer {
+  align-items: center;
+  display: flex;
+  gap: 24px;
+  margin-bottom: 56px;
+}
+
+.doubleContainer > section {
+  flex: 1;
+}
+
+.img {
+  width: 100%;
+}
+
+.emoji {
+  display: flex;
+  justify-content: center;
+  font-size: 45px;
+}
+
+@media screen and (max-width: 600px) {
+  .doubleContainer {
+    flex-direction: column;
+    gap: 0px;
+  }
+}
