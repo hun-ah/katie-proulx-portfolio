@@ -54,11 +54,11 @@ const ProjectLayout = ({ children }) => {
           unoptimized={true}
         />
       </div>
-      <div
-        className={`${styles.pageContent} projectInnerContainer animate__animated animate__fadeIn animate__fast`}
+      <section
+        className={`${styles.pageContent} animate__animated animate__fadeIn animate__fast`}
       >
         {children}
-      </div>
+      </section>
     </main>
   );
 };
