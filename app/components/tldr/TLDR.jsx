@@ -15,7 +15,7 @@ const TLDR = ({ project }) => {
           <Card key={card.id} icon={card.icon} text={card.text} />
         ))}
       </ul>
-      <p className="paragraphRegular">{project.tldrBlurb}</p>
+      <p className="paragraphLarge">{project.tldrBlurb}</p>
     </section>
   );
 };
