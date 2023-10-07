@@ -1,4 +1,5 @@
 import ProjectContent from "@/app/components/project-content/ProjectContent";
+import DownloadApp from "@/app/components/thescore-download/DownloadApp";
 import Image from "next/image";
 import styles from "./page.module.css";
 import { content } from "@/app/data/theScorePageDetails";
@@ -77,6 +78,9 @@ const TheScore = () => {
           p2={wrapItUp.paragraph2}
         />
         <span className={styles.emoji}>✌️</span>
+      </div>
+      <div className={`projectInnerContainer ${styles.downloadContainer}`}>
+        <DownloadApp />
       </div>
     </section>
   );
