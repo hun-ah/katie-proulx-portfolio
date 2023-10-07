@@ -36,6 +36,7 @@
   /* ------- surface ------- */
   --siteBgPrimary: var(--white);
   --siteBgSecondary: var(--neutral900);
+  --siteBgTertiary: var(--neutral100);
   --navBarPrimary: var(--armygreen500);
   --navBarSecondary: var(--armygreen700);
   --navBgOverlayMobile: var(--armygreenoverlay);
