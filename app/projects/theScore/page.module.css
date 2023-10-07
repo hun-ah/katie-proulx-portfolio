@@ -25,6 +25,12 @@
   font-size: 45px;
 }
 
+@media screen and (max-width: 900px) {
+  .downloadContainer {
+    padding: 0;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .doubleContainer {
     flex-direction: column;
