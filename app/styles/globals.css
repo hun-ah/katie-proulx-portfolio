@@ -136,6 +136,7 @@ button {
   line-height: var(--lineHeight1);
   letter-spacing: 2.4px;
   color: var(--textAccent);
+  text-transform: uppercase;
 }
 
 /* ------- OTHER ------- */
@@ -146,6 +147,10 @@ button {
 
 .heightAuto {
   height: auto;
+}
+
+.marginTopBottom {
+  margin: 50px 0;
 }
 
 .customAnimation {
