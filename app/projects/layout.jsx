@@ -17,7 +17,7 @@ const ProjectLayout = ({ children }) => {
     case "theScore":
       project = projectDetails[0];
       break;
-    case "project-2":
+    case "bevalix":
       project = projectDetails[1];
       break;
     case "project-3":
