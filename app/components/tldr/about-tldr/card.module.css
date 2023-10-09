@@ -1,0 +1,15 @@
+.container {
+  border-radius: 8px;
+  border: 1px solid var(--armygreen100);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    flex-direction: row;
+    align-items: center;
+  }
+}
