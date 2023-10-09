@@ -32,16 +32,33 @@ export const projectDetails = [
       "We accomplished our 3 primary goals when we brought Parlay+ to market. With such a highly requested feature, we already knew there was a major user need; but we still had to execute it in an intuitive way with a very small learning curve to ensure the feature was adopted successfully.",
   },
   {
-    client: "Buddy Ins",
-    industry: "Insurance",
+    client: "Bevalix",
+    industry: "Health & fitness",
     myRole: "Product design",
-    duration: "9 months",
-    description:
-      "theScore | Bet is a major Canadian sports betting app that launched in April 2022. A major feature I worked to design and implement post-launch was Parlay+. This feature was highly anticipated and allows users to create parlay bets by combining selections from the same game.",
+    duration: "2 months",
+    description: "",
     title:
-      "Transforming sports betting with a feature highly anticipated by users",
-    mainImg: "/thescore/screen1.jpg",
+      "Designing an app that keeps you safe, by leveraging the strength of community",
+    mainImg: "",
     alt: "",
+    tldrCards: [
+      {
+        id: 1,
+        icon: "",
+        text: "",
+      },
+      {
+        id: 2,
+        icon: "",
+        text: "",
+      },
+      {
+        id: 3,
+        icon: "",
+        text: "",
+      },
+    ],
+    tldrBlurb: "",
   },
   {
     client: "Vetster",
@@ -54,6 +71,24 @@ export const projectDetails = [
       "Transforming sports betting with a feature highly anticipated by users",
     mainImg: "/thescore/screen1.jpg",
     alt: "",
+    tldrCards: [
+      {
+        id: 1,
+        icon: "",
+        text: "",
+      },
+      {
+        id: 2,
+        icon: "",
+        text: "",
+      },
+      {
+        id: 3,
+        icon: "",
+        text: "",
+      },
+    ],
+    tldrBlurb: "",
   },
 ];
 
@@ -64,7 +99,7 @@ export const projects = [
     img: "/bevalix/img-main.jpg",
     title:
       "Designing an app that keeps you safe, by leveraging the strength of community",
-    href: "/projects/project-2",
+    href: "/projects/bevalix",
   },
   {
     id: 2,
