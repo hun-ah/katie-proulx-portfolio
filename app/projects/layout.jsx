@@ -1,29 +1,15 @@
 "use client";
+import React from "react";
 import "animate.css";
 import styles from "./layout.module.css";
 import ProjectHeader from "../components/project-header/ProjectHeader";
-import TLDR from "../components/tldr/TLDR";
 import ProjectNav from "../components/project-page-nav/ProjectNav";
 import Image from "next/image";
-import { projectDetails } from "@/app/data/projectDetails";
 import { useEffect } from "react";
-import { usePathname } from "next/navigation";
+import { useAppContext as ProjectDetailsContext } from "@/app/components/contexts/ProjectDetailsContext";
 
 const ProjectLayout = ({ children }) => {
-  const pathname = usePathname();
-  const path = pathname.split("/").slice(-1).toString();
-
-  let project;
-  switch (path) {
-    case "theScore":
-      project = projectDetails[0];
-      break;
-    case "bevalix":
-      project = projectDetails[1];
-      break;
-    case "project-3":
-      project = projectDetails[2];
-  }
+  const { project, path } = ProjectDetailsContext();
 
   useEffect(() => {
     window.scrollTo({
@@ -44,17 +30,6 @@ const ProjectLayout = ({ children }) => {
         className={`heightAuto ${styles.mainImg} animate__animated animate__fadeIn animate__fast`}
         unoptimized={true}
       />
-      <TLDR project={project} />
-      <div className="projectInnerContainer">
-        <Image
-          alt={project.alt}
-          height={1000}
-          width={800}
-          src={project.secondaryImg}
-          className={`heightAuto ${styles.mainImg}`}
-          unoptimized={true}
-        />
-      </div>
       <section
         className={`${styles.pageContent} animate__animated animate__fadeIn animate__fast`}
       >
