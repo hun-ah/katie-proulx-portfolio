@@ -1,15 +1,20 @@
+"use client";
 import ProjectContent from "@/app/components/project-content/ProjectContent";
 import DownloadApp from "@/app/components/thescore-download/DownloadApp";
+import TLDR from "@/app/components/tldr/TLDR";
 import Image from "next/image";
 import styles from "./page.module.css";
 import { content } from "@/app/data/theScorePageDetails";
+import { useAppContext as ProjectDetailsContext } from "@/app/components/contexts/ProjectDetailsContext";
 
 const TheScore = () => {
   const { goals, branding, challenges, whyParlay, betterUx, wrapItUp } =
     content;
+  const project = ProjectDetailsContext();
 
   return (
     <section>
+      <TLDR project={project} />
       <div className={`projectInnerContainer ${styles.container}`}>
         <ProjectContent
           title={goals.title}
