@@ -97,6 +97,7 @@ export const projects = [
     id: 1,
     company: "Bevalix",
     img: "/bevalix/img-main.jpg",
+    alt: "Rows of mobile phones with Bevalix screens on them",
     title:
       "Designing an app that keeps you safe, by leveraging the strength of community",
     href: "/projects/bevalix",
@@ -105,6 +106,7 @@ export const projects = [
     id: 2,
     company: "theScore",
     img: "/thescore/img-main.jpg",
+    alt: "Two mobile phones with theScore BET screens",
     title:
       "Transforming sports betting with a feature highly anticipated by users",
     href: "/projects/theScore",
@@ -113,6 +115,7 @@ export const projects = [
     id: 3,
     company: "company3",
     img: "/thescore/img-main.jpg",
+    alt: "",
     title: "Building something something yes",
     href: "/projects/project-3",
   },
