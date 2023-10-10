@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const DownloadApp = () => {
   return (
-    <section className={styles.container}>
+    <section className={`imageBorderRadius ${styles.container}`}>
       <Image
         alt="theScore BET logo"
         height={20}
