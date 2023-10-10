@@ -17,6 +17,11 @@
   gap: 24px;
 }
 
+.img {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
 @media screen and (max-width: 730px) {
   .cardContainer {
     flex-direction: column;
