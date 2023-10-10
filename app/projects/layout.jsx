@@ -3,6 +3,7 @@ import "animate.css";
 import styles from "./layout.module.css";
 import ProjectHeader from "../components/project-header/ProjectHeader";
 import TLDR from "../components/tldr/TLDR";
+import ProjectNav from "../components/project-page-nav/ProjectNav";
 import Image from "next/image";
 import { projectDetails } from "@/app/data/projectDetails";
 import { useEffect } from "react";
@@ -59,6 +60,7 @@ const ProjectLayout = ({ children }) => {
       >
         {children}
       </section>
+      <ProjectNav path={path} />
     </main>
   );
 };
