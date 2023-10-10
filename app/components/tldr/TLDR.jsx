@@ -1,8 +1,9 @@
 import styles from "./TLDR.module.css";
 import Card from "./cards/card";
+import Image from "next/image";
 
 const TLDR = ({ project }) => {
-  const { tldrCards } = project;
+  const projectInfo = project.project;
 
   return (
     <section className={`${styles.TLDR} projectInnerContainer`}>
@@ -11,11 +12,19 @@ const TLDR = ({ project }) => {
         <h3 className="headingBold">TLDR;</h3>
       </div>
       <ul className={styles.cardContainer}>
-        {tldrCards.map((card) => (
+        {projectInfo.tldrCards.map((card) => (
           <Card key={card.id} icon={card.icon} text={card.text} />
         ))}
       </ul>
-      <p className="paragraphLarge">{project.tldrBlurb}</p>
+      <p className="paragraphLarge">{projectInfo.tldrBlurb}</p>
+      <Image
+        alt={project.alt}
+        height={1000}
+        width={800}
+        src={projectInfo.secondaryImg}
+        className={`heightAuto ${styles.img}`}
+        unoptimized={true}
+      />
     </section>
   );
 };
