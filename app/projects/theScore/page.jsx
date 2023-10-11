@@ -82,9 +82,9 @@ const TheScore = () => {
           p1={wrapItUp.paragraph1}
           p2={wrapItUp.paragraph2}
         />
-        <span className={styles.emoji}>✌️</span>
+        <span className="projectEmoji">✌️</span>
       </div>
-      <div className={`projectInnerContainer ${styles.downloadContainer}`}>
+      <div className="projectInnerContainer downloadContainer">
         <DownloadApp />
       </div>
     </section>
