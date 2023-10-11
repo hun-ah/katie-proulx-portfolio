@@ -5,6 +5,11 @@
   color: var(--textPrimary);
 }
 
+.listContainer {
+  list-style: disc;
+  margin-left: 24px;
+}
+
 @media screen and (min-width: 600px) {
   .container:last-child::before {
     content: "";
