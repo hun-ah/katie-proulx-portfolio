@@ -21,6 +21,10 @@
   margin-bottom: 32px;
 }
 
+.container p + p {
+  margin-top: calc(-32px + 16px);
+}
+
 .projectDetails {
   display: flex;
   flex-wrap: wrap;
