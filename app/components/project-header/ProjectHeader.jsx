@@ -12,13 +12,19 @@ const ProjectHeader = ({ project }) => {
 
   const values = Object.values(project);
 
+  const textLines = project.description.split("\n").map((line, index) => (
+    <p key={index} className="paragraphLarge">
+      {line}
+    </p>
+  ));
+
   return (
     <header
       className={`${styles.container} projectInnerContainer customAnimation`}
     >
       <span className="paragraphRegular">{project.client}</span>
       <h1 className="headingBoldLarge">{project.title}</h1>
-      <p className="paragraphLarge">{project.description}</p>
+      {textLines}
       <ul className={styles.projectDetails}>
         {titles.map((title, index) => (
           <ProjectDetail
