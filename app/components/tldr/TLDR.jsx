@@ -5,13 +5,24 @@ import Image from "next/image";
 const TLDR = ({ project }) => {
   const projectInfo = project.project;
 
+  let cardClass;
+  switch (projectInfo.client) {
+    case "Bevalix":
+      cardClass = styles.bevalixCards;
+      break;
+    case "theScore | Bet":
+      cardClass = styles.theScoreCards;
+      break;
+    // need to fill in project 3
+  }
+
   return (
     <section className={`${styles.TLDR} projectInnerContainer`}>
       <div className={styles.titleText}>
         <h3 className="overline">{projectInfo.tldrTitle}</h3>
         <h3 className="headingBold">TLDR;</h3>
       </div>
-      <ul className={styles.cardContainer}>
+      <ul className={`${cardClass} ${styles.mobileCards}`}>
         {projectInfo.tldrCards.map((card) => (
           <Card
             key={card.id}
