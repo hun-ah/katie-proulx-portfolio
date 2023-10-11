@@ -5,13 +5,20 @@
   color: var(--textPrimary);
 }
 
+.bevalixCards {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
 .titleText {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.cardContainer {
+.theScoreCards {
   display: flex;
   justify-content: space-between;
   gap: 24px;
@@ -23,7 +30,8 @@
 }
 
 @media screen and (max-width: 730px) {
-  .cardContainer {
+  .mobileCards {
+    display: flex;
     flex-direction: column;
   }
 }
