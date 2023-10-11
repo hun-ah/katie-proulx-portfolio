@@ -15,7 +15,7 @@ const TheScore = () => {
   return (
     <section>
       <TLDR project={project} />
-      <div className={`projectInnerContainer ${styles.container}`}>
+      <div className="projectInnerContainer flexColumnGap56">
         <ProjectContent
           title={goals.title}
           p1={goals.paragraph1}
@@ -27,7 +27,7 @@ const TheScore = () => {
           height={20}
           width={20}
           unoptimized={true}
-          className={`heightAuto ${styles.img}`}
+          className="heightAuto width100"
         />
         <ProjectContent title={branding.title} p1={goals.paragraph1} />
         <Image
@@ -36,7 +36,7 @@ const TheScore = () => {
           height={20}
           width={20}
           unoptimized={true}
-          className={`heightAuto ${styles.img}`}
+          className="heightAuto width100"
         />
         <ProjectContent
           title={challenges.title}
@@ -50,9 +50,9 @@ const TheScore = () => {
         height={20}
         width={20}
         unoptimized={true}
-        className={`heightAuto marginTopBottom ${styles.img}`}
+        className="heightAuto marginTopBottom width100"
       />
-      <div className={`projectInnerContainer ${styles.doubleContainer}`}>
+      <div className="projectInnerContainer doubleContainer">
         <ProjectContent
           title={whyParlay[0].title}
           p1={whyParlay[0].paragraph1}
@@ -63,14 +63,14 @@ const TheScore = () => {
           p2={whyParlay[1].paragraph2}
         />
       </div>
-      <div className={`projectInnerContainer ${styles.container}`}>
+      <div className="projectInnerContainer flexColumnGap56">
         <Image
           alt="Parlay+ graphic"
           src="/thescore/screen6.jpg"
           height={20}
           width={20}
           unoptimized={true}
-          className={`heightAuto ${styles.img}`}
+          className="heightAuto width100"
         />
         <ProjectContent
           title={betterUx.title}
