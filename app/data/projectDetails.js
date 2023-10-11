@@ -15,50 +15,65 @@ export const projectDetails = [
       {
         id: 1,
         icon: "/theScore/icons/dollar-sign.svg",
-        text: "Increased GGR (Gross Gaming Revenue)",
+        title: "Increased GGR (Gross Gaming Revenue)",
       },
       {
         id: 2,
         icon: "/theScore/icons/coins.svg",
-        text: "Increased Number of Bets Placed Per Month",
+        title: "Increased Number of Bets Placed Per Month",
       },
       {
         id: 3,
         icon: "/theScore/icons/user-switch.svg",
-        text: "Improved retention & acquisition",
+        title: "Improved retention & acquisition",
       },
     ],
     tldrBlurb:
       "We accomplished our 3 primary goals when we brought Parlay+ to market. With such a highly requested feature, we already knew there was a major user need; but we still had to execute it in an intuitive way with a very small learning curve to ensure the feature was adopted successfully.",
+    tldrTitle: "outcomes",
   },
   {
     client: "Bevalix",
     industry: "Health & fitness",
-    myRole: "Product design",
+    myRole: "Product design\nBranding",
     duration: "2 months",
-    description: "",
+    description:
+      "Bevalix is a safety-first fitness tracking app that combines your phone’s fall detection algorithm with a community of first responders in close proximity to you, significantly decreasing the time between injury and emergency response.\n🚧 🇫🇷 Bevalix is an application currently in development. It will launch in France initially before expanding to other countries.",
     title:
       "Designing an app that keeps you safe, by leveraging the strength of community",
-    mainImg: "",
-    alt: "",
+    mainImg: "/bevalix/screen1.jpg",
+    alt: "Bevalix graphic on mobile phone",
     tldrCards: [
       {
         id: 1,
-        icon: "",
-        text: "",
+        icon: "/bevalix/icons/clock.svg",
+        title: "Decrease emergency response time",
+        paragraph:
+          "By activating a network of community responders in the area, life saving measure can be taken at a dramatically faster rate",
       },
       {
         id: 2,
-        icon: "",
-        text: "",
+        icon: "/bevalix/icons/person.svg",
+        title: "Preventative measures",
+        paragraph:
+          "Develop an algorithm that uses wearables to analyze biomarkers and predict potential cardiac arrest",
       },
       {
         id: 3,
-        icon: "",
-        text: "",
+        icon: "/bevalix/icons/first-aid.svg",
+        title: "Increase positive patient outcomes",
+        paragraph:
+          "Reaching the injured party within a few minutes greatly reduces the potential long-term consequences of injury",
+      },
+      {
+        id: 4,
+        icon: "/bevalix/icons/book.svg",
+        title: "Community education",
+        paragraph:
+          "Increase number of people who can perform CPR and will commit to doing so when called upon",
       },
     ],
-    tldrBlurb: "",
+    tldrTitle: "goals",
   },
   {
     client: "Vetster",
@@ -89,6 +104,7 @@ export const projectDetails = [
       },
     ],
     tldrBlurb: "",
+    tldrTitle: "",
   },
 ];
 
