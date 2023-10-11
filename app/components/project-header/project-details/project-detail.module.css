@@ -7,3 +7,8 @@
 .textContainer span {
   color: var(--textPrimary);
 }
+
+.textContainer span:nth-child(3) {
+  display: block;
+  margin-top: -8px;
+}
