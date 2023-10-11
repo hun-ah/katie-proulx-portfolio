@@ -57,11 +57,120 @@ export const content = {
     },
     {
       paragraph1: "✅ MVP features",
-      paragraph2: "",
+      paragraph2: "placeholder",
+      bulletPoints: [
+        "Exercise tracking (running, walking, cycling)",
+        "Fall detection & auto 112 notification",
+        "Community response beacon/alert",
+        "Learning library (paid/free resources)",
+      ],
     },
     {
       paragraph1: "🚫 De-scoped from MVP",
-      paragraph2: "",
+      paragraph2: "placeholder",
+      bulletPoints: [
+        "Community Map",
+        "Past exercise session details",
+        "Additional exercise types",
+        "Session safety rating & warning (based on weather details, proximity of Responders)",
+        "Music app integration",
+      ],
+    },
+  ],
+  blurb1: {
+    paragraph1:
+      "I designed an exercise session pre-start screen as well as an animated countdown to active session.",
+    paragraph2:
+      "While the app’s primary goal is safety, I wanted to inject a bit of fun where possible, so I tried to do that with a pre-exercise countdown after the user taps start (demarrer).",
+  },
+  blurb2: {
+    paragraph1:
+      "I created a focused & simplified activity screen that balanced providing relevant session details with the highest priority feature - the SOS swipe gesture.",
+    paragraph2:
+      "The most important component on the active session screen is the ability for the user to perform the SOS swipe gesture, notifying the nearby community that they feel unsafe.\nDuring an active exercise session, the app also tracks simple yet standard workout metrics that are specific to the exercise being performed, in addition to displaying other key items: exercise safety rating, number of responders in proximity, music integration, map display, settings, and the ability to stop or pause the session.",
+  },
+  blurb3: {
+    paragraph1:
+      "When a user falls and is unresponsive, Bevalix will automatically (after a 15 second delay to allow for user cancellation in the event of a false alarm) perform a few key actions that I needed to account & design for.",
+    // numbers with text
+  },
+  blurb4: {
+    paragraph1:
+      "I chose to use the swipe gesture to confirm critical actions in 4 different places within the alert/response flow.",
+    paragraph2:
+      "Utilizing the swipe gesture ensures that critical decisions are not made accidentally – especially when action, or in-action, can mean life or death.",
+    // numbers with text
+  },
+  blurb5: {
+    paragraph1:
+      "I designed a screen that clearly shows the Responder user where the injured athlete is located in relation to themselves.",
+    paragraph2:
+      "When a Responder receives a call for help (in the form of a notification), they must utilize a swipe gesture to confirm that they are on the way. This definitive action, in turn, notifies the injured user that help is incoming, with an ETA. If they are conscious, they can interact with the Responder.",
+  },
+  blurb6: {
+    paragraph1:
+      "Once the Responder confirms they can help, they are first instructed to notify EMS.",
+    paragraph2:
+      "Once this confirmation modal is dismissed, a step by step real-time map guiding them to the injured athlete will take over the screen.",
+  },
+  blurb7: {
+    paragraph1:
+      "One of the most important stages of this entire journey that I needed to conceptualize, and design for, is the arrival of the Responder to the location of the injured Athlete.",
+    paragraph2:
+      "The design had to be big, bold, and simple - as the Responder in this situation would be highly focused on the injured party and in a potentially hectic environment.\nIn the most dire situations, the Responder would have to perform a few key health-related checks of the injured Athlete. In collaboration with stakeholders, we created a compression rhythm concept that combined a pulsing visual indicator as well as the option to play music with a beat that matched the required beat-per-minute rhythm that CPR must be performed at.",
+  },
+  blurb8: {
+    paragraph1:
+      "At the end of the day, Bevalix is focused on saving lives, harnessing the power of an active community to do so.",
+    paragraph2:
+      "Once EMS arrives, the Responder’s job is complete. A thank you message is displayed, and, in a later version of the app, it is the goal of the Bevalix team to find ways to reward the responding community for their service.",
+  },
+  blurb9: {
+    paragraph1: "Design system",
+    paragraph2:
+      "As a part of the overall product development and branding, I also established an initial design system within Figma. While I do this for all new products I work with, this one was considerably larger in scale. I worked alongside our engineering team to create a system that made sense to everyone.",
+  },
+  challenges: {
+    title: "challenges",
+    paragraph1:
+      "This was by far one of the most challenging products I have ever worked on, not only because of the complexity of the touchpoints between user types, but the gravity of the actions being performed.",
+    paragraph2:
+      "Never has it been more important to put myself in the position of the user(s) as they are interacting with a product.",
+  },
+  numberedList1: [
+    {
+      number: 1,
+      text: "Send out a beacon & request help from all nearby Responders (consider: what does the Responder community see on their end?)",
+    },
+    {
+      number: 2,
+      text: "Send out a beacon & request help from all nearby Responders (consider: what does the Responder community see on their end?)",
+    },
+    {
+      number: 3,
+      text: "Send out a beacon & request help from all nearby Responders (consider: what does the Responder community see on their end?)",
+    },
+    {
+      number: 4,
+      text: "Send out a beacon & request help from all nearby Responders (consider: what does the Responder community see on their end?)",
+    },
+  ],
+  numberedList2: [
+    {
+      number: 1,
+      text: "Calling 112",
+    },
+    {
+      number: 2,
+      text: "Cancelling an active call for help when no longer necessary.",
+    },
+    {
+      number: 3,
+      text: "Requesting help because the user feels unsafe",
+    },
+    {
+      number: 4,
+      text: "Accepting/responding to a call for help",
     },
   ],
 };
