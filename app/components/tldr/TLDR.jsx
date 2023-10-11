@@ -8,12 +8,17 @@ const TLDR = ({ project }) => {
   return (
     <section className={`${styles.TLDR} projectInnerContainer`}>
       <div className={styles.titleText}>
-        <h3 className={`${styles.outcomes} overline`}>OUTCOMES</h3>
+        <h3 className="overline">{projectInfo.tldrTitle}</h3>
         <h3 className="headingBold">TLDR;</h3>
       </div>
       <ul className={styles.cardContainer}>
         {projectInfo.tldrCards.map((card) => (
-          <Card key={card.id} icon={card.icon} text={card.text} />
+          <Card
+            key={card.id}
+            icon={card.icon}
+            title={card.title}
+            paragraph={card.paragraph}
+          />
         ))}
       </ul>
       <p className="paragraphLarge">{projectInfo.tldrBlurb}</p>
