@@ -42,6 +42,7 @@ export const projectDetails = [
     title:
       "Designing an app that keeps you safe, by leveraging the strength of community",
     mainImg: "/bevalix/screen1.jpg",
+    secondaryImg: "/bevalix/placeholder.jpg",
     alt: "Bevalix graphic on mobile phone",
     tldrCards: [
       {
