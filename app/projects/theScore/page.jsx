@@ -1,4 +1,5 @@
 "use client";
+import styles from "./page.module.css";
 import ProjectContent from "@/app/components/project-content/ProjectContent";
 import DownloadApp from "@/app/components/thescore-download/DownloadApp";
 import TLDR from "@/app/components/tldr/TLDR";
@@ -17,8 +18,8 @@ const TheScore = () => {
       <div className="projectInnerContainer">
         <Image
           alt="Parlay+ graphic"
-          height={1000}
-          width={800}
+          height={20}
+          width={20}
           src="/thescore/screen2.jpg"
           className="heightAuto width100"
           unoptimized={true}
@@ -61,16 +62,18 @@ const TheScore = () => {
         unoptimized={true}
         className="heightAuto width100"
       />
-      <div className="projectInnerContainer doubleContainer">
-        <ProjectContent
-          title={whyParlay[0].title}
-          p1={whyParlay[0].paragraph1}
-          p2={whyParlay[0].paragraph2}
-        />
-        <ProjectContent
-          p1={whyParlay[1].paragraph1}
-          p2={whyParlay[1].paragraph2}
-        />
+      <div className={`projectInnerContainer ${styles.doubleContainerParent}`}>
+        <h5 className="overline">{whyParlay[0].title}</h5>
+        <div className="doubleContainer">
+          <ProjectContent
+            p1={whyParlay[0].paragraph1}
+            p2={whyParlay[0].paragraph2}
+          />
+          <ProjectContent
+            p1={whyParlay[1].paragraph1}
+            p2={whyParlay[1].paragraph2}
+          />
+        </div>
       </div>
       <div className="projectInnerContainer flexColumnGap56">
         <Image
