@@ -32,7 +32,9 @@ const TLDR = ({ project }) => {
           />
         ))}
       </ul>
-      <p className="paragraphLarge">{projectInfo.tldrBlurb}</p>
+      {projectInfo.tldrBlurb && (
+        <p className="paragraphLarge">{projectInfo.tldrBlurb}</p>
+      )}
     </section>
   );
 };
