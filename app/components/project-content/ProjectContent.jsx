@@ -13,15 +13,21 @@ const ProjectContent = ({ title, p1, p2, mvpBullets }) => {
 
   return (
     <section className={styles.container}>
-      <h5 className="overline">{title}</h5>
-      <p className="headingBold">{p1}</p>
-      {textLines}
-      {mvpBullets && (
-        <ul className={`paragraphLarge ${styles.listContainer}`}>
-          {mvpBullets &&
-            mvpBullets.map((bullet, index) => <li key={index}>{bullet}</li>)}
-        </ul>
+      {title && (
+        <div>
+          <h5 className="overline">{title}</h5>
+        </div>
       )}
+      <div className={styles.textContainer}>
+        <p className="headingBold">{p1}</p>
+        {textLines}
+        {mvpBullets && (
+          <ul className={`paragraphLarge ${styles.listContainer}`}>
+            {mvpBullets &&
+              mvpBullets.map((bullet, index) => <li key={index}>{bullet}</li>)}
+          </ul>
+        )}
+      </div>
     </section>
   );
 };
