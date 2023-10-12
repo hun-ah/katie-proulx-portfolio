@@ -31,7 +31,7 @@ const ProjectLayout = ({ children }) => {
         unoptimized={true}
       />
       <section
-        className={`${styles.pageContent} animate__animated animate__fadeIn animate__fast`}
+        className={`flexColumnGap56 ${styles.pageContent} animate__animated animate__fadeIn animate__fast`}
       >
         {children}
       </section>
