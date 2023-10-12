@@ -27,6 +27,7 @@ const Navbar = () => {
             alt="Katie Proulx, Product Designer"
             width={170}
             height={12}
+            priority
           />
         </Link>
         <ul className={styles.navlinks}>
