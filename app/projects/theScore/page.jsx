@@ -12,9 +12,9 @@ const TheScore = () => {
   const project = ProjectDetailsContext();
 
   return (
-    <section>
+    <>
       <TLDR project={project} />
-      <div className="projectInnerContainer flexColumnGap56">
+      <div className="projectInnerContainer">
         <Image
           alt="Parlay+ graphic"
           height={1000}
@@ -59,7 +59,7 @@ const TheScore = () => {
         height={20}
         width={20}
         unoptimized={true}
-        className="heightAuto marginTopBottom width100"
+        className="heightAuto width100"
       />
       <div className="projectInnerContainer doubleContainer">
         <ProjectContent
@@ -96,7 +96,7 @@ const TheScore = () => {
       <div className="projectInnerContainer downloadContainer">
         <DownloadApp />
       </div>
-    </section>
+    </>
   );
 };
 
