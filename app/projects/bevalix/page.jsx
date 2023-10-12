@@ -96,16 +96,18 @@ const Bevalix = () => {
           p2={discovery.paragraph2}
         />
       </div>
-      <div className="projectInnerContainer doubleContainer">
-        <ProjectContent
-          title={primaryUsers[0].title}
-          p1={primaryUsers[0].paragraph1}
-          p2={primaryUsers[0].paragraph2}
-        />
-        <ProjectContent
-          p1={primaryUsers[1].paragraph1}
-          p2={primaryUsers[1].paragraph2}
-        />
+      <div className={`projectInnerContainer ${styles.doubleContainerParent}`}>
+        <h5 className="overline">{primaryUsers[0].title}</h5>
+        <div className="doubleContainer">
+          <ProjectContent
+            p1={primaryUsers[0].paragraph1}
+            p2={primaryUsers[0].paragraph2}
+          />
+          <ProjectContent
+            p1={primaryUsers[1].paragraph1}
+            p2={primaryUsers[1].paragraph2}
+          />
+        </div>
       </div>
       <div className="projectInnerContainer flexColumnGap56">
         <Image
