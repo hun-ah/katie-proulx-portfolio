@@ -165,7 +165,6 @@ button {
   align-items: center;
   display: flex;
   gap: 24px;
-  margin-bottom: 56px !important;
 }
 
 .doubleContainer > section {
