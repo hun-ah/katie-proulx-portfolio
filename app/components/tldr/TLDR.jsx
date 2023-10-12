@@ -33,14 +33,6 @@ const TLDR = ({ project }) => {
         ))}
       </ul>
       <p className="paragraphLarge">{projectInfo.tldrBlurb}</p>
-      <Image
-        alt={project.alt}
-        height={1000}
-        width={800}
-        src={projectInfo.secondaryImg}
-        className={`heightAuto ${styles.img}`}
-        unoptimized={true}
-      />
     </section>
   );
 };
