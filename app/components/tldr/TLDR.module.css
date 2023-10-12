@@ -1,8 +1,9 @@
 .TLDR {
+  color: var(--textPrimary);
   display: flex;
   flex-direction: column;
   gap: 40px;
-  color: var(--textPrimary);
+  margin-bottom: 56px;
 }
 
 .bevalixCards {
