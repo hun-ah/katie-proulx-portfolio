@@ -15,6 +15,16 @@ const TheScore = () => {
     <section>
       <TLDR project={project} />
       <div className="projectInnerContainer flexColumnGap56">
+        <Image
+          alt="Parlay+ graphic"
+          height={1000}
+          width={800}
+          src="/thescore/screen2.jpg"
+          className="heightAuto width100"
+          unoptimized={true}
+        />
+      </div>
+      <div className="projectInnerContainer flexColumnGap56">
         <ProjectContent
           title={goals.title}
           p1={goals.paragraph1}
