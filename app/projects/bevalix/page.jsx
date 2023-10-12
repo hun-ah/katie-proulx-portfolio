@@ -33,7 +33,7 @@ const Bevalix = () => {
   const project = ProjectDetailsContext();
 
   return (
-    <section>
+    <>
       <div className="projectInnerContainer flexColumnGap56">
         <ProjectContent
           title={problem.title}
@@ -252,7 +252,7 @@ const Bevalix = () => {
       <div className="projectInnerContainer downloadContainer">
         <DownloadApp />
       </div>
-    </section>
+    </>
   );
 };
 
