@@ -2,17 +2,18 @@ import styles from "./project.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
-const Project = ({ company, title, img, href }) => {
+const Project = ({ company, title, img, href, alt }) => {
   return (
     <li>
       <Link href={`${href}`} className={styles.container}>
         <Image
-          alt="headshot of Katie with her hand on her face, looking away from the camera"
-          className="imageBorderRadius heightAuto"
-          height={0}
-          width={452}
+          alt={alt}
+          height="0"
+          width="0"
           src={img}
           unoptimized={true}
+          style={{ width: "452px", height: "auto" }}
+          priority
         />
         <div className={styles.textContainer}>
           <h2 className={`${styles.company} paragraphRegular`}>{company}</h2>
