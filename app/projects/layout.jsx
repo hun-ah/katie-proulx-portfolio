@@ -24,11 +24,12 @@ const ProjectLayout = ({ children }) => {
       <ProjectHeader project={project} />
       <Image
         alt={project.alt}
-        height={1000}
-        width={800}
+        height={20}
+        width={20}
         src={project.mainImg}
-        className={`heightAuto ${styles.mainImg} animate__animated animate__fadeIn animate__fast`}
+        className={`heightAuto width100 ${styles.mainImg} animate__animated animate__fadeIn animate__fast`}
         unoptimized={true}
+        priority
       />
       <section
         className={`flexColumnGap56 ${styles.pageContent} animate__animated animate__fadeIn animate__fast`}
