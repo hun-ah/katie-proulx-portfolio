@@ -192,7 +192,6 @@ button {
 @media screen and (max-width: 600px) {
   .doubleContainer {
     flex-direction: column;
-    gap: 0px;
   }
 }
 
