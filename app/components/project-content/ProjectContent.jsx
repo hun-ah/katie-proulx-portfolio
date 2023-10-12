@@ -16,10 +16,12 @@ const ProjectContent = ({ title, p1, p2, mvpBullets }) => {
       <h5 className="overline">{title}</h5>
       <p className="headingBold">{p1}</p>
       {textLines}
-      <ul className={`paragraphLarge ${styles.listContainer}`}>
-        {mvpBullets &&
-          mvpBullets.map((bullet, index) => <li key={index}>{bullet}</li>)}
-      </ul>
+      {mvpBullets && (
+        <ul className={`paragraphLarge ${styles.listContainer}`}>
+          {mvpBullets &&
+            mvpBullets.map((bullet, index) => <li key={index}>{bullet}</li>)}
+        </ul>
+      )}
     </section>
   );
 };
