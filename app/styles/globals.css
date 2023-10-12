@@ -162,7 +162,6 @@ button {
 }
 
 .doubleContainer {
-  align-items: center;
   display: flex;
   gap: 24px;
 }
