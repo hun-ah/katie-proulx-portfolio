@@ -16,6 +16,7 @@ const Projects = () => {
             title={project.title}
             img={project.img}
             href={project.href}
+            alt={project.alt}
           />
         ))}
       </ul>
