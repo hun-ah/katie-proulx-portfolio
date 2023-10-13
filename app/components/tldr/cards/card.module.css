@@ -13,6 +13,16 @@
   letter-spacing: -1px;
 }
 
+.card img {
+  align-self: flex-start;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 @media screen and (max-width: 730px) {
   .card {
     flex-direction: row;
