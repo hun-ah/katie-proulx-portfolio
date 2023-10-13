@@ -27,12 +27,12 @@ const ProjectLayout = ({ children }) => {
         height={20}
         width={20}
         src={project.mainImg}
-        className={`heightAuto width100 ${styles.mainImg} animate__animated animate__fadeIn animate__fast`}
+        className={`heightAuto width100 ${styles.mainImg} animationDelay animate__animated animate__fadeIn`}
         unoptimized={true}
         priority
       />
       <section
-        className={`flexColumnGap56 ${styles.pageContent} animate__animated animate__fadeIn animate__fast`}
+        className={`flexColumnGap56 animationDelay animate__animated animate__fadeIn `}
       >
         {children}
       </section>
