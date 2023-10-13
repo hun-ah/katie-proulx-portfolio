@@ -1,5 +1,6 @@
 .numberedCardContainer {
   display: flex;
+  flex-wrap: wrap;
   gap: 16px;
 }
 
@@ -7,4 +8,10 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+@media screen and (max-width: 900px) {
+  .numberedCardContainer {
+    gap: 24px;
+  }
 }
