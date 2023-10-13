@@ -179,6 +179,14 @@ button {
   animation-duration: 800ms;
 }
 
+.overflowAuto {
+  overflow: auto;
+}
+
+.animationDelay {
+  animation-delay: 500ms;
+}
+
 .projectInnerContainer {
   padding: 0 var(--paddingSide);
 }
