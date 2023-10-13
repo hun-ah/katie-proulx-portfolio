@@ -6,7 +6,7 @@ import { projects } from "@/app/data/projectDetails";
 const Projects = () => {
   return (
     <section
-      className={`${styles.container} animate__animated animate__fadeIn animate__fast`}
+      className={`${styles.container} animationDelay animate__animated animate__fadeIn animate__fast`}
     >
       <ul className={styles.projectContainer}>
         {projects.map((project) => (
