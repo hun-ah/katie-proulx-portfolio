@@ -4,7 +4,7 @@ import Image from "next/image";
 const Card = ({ icon, title, paragraph }) => {
   return (
     <li className={styles.card}>
-      <Image alt="" height={40} width={40} src={icon} />
+      <Image alt="" height={40} width={40} src={icon} priority />
       <h4 className="headingBold">{title}</h4>
       <p className="paragraphLarge">{paragraph}</p>
     </li>

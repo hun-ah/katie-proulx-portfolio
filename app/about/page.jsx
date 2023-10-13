@@ -29,6 +29,7 @@ const About = () => {
             height={225}
             width={225}
             src="/about/headshot.png"
+            priority
           />
         </header>
         <section className={styles.tldr}>
