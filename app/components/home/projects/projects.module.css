@@ -1,5 +1,4 @@
 .container {
-  animation-delay: 500ms;
   margin: auto;
   padding: 0 var(--paddingSide);
   padding-bottom: var(--paddingTopBottom);
