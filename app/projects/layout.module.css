@@ -6,10 +6,6 @@
   padding: var(--paddingTopBottom) 0;
 }
 
-.pageContent {
-  animation-delay: 500ms;
-}
-
 .mainImg {
   width: 100%;
 }
