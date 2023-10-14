@@ -16,10 +16,15 @@
 }
 
 .text {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   gap: 8px;
   text-decoration: none;
+}
+
+.overlay {
+  cursor: pointer;
 }
 
 .text span {
