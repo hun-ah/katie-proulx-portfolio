@@ -55,7 +55,7 @@
     z-index: -1;
   }
 
-  .container a + a {
+  .container div + div {
     position: absolute;
   }
 
