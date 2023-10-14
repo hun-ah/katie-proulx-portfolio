@@ -125,11 +125,6 @@ export const content = {
     paragraph2:
       "Once EMS arrives, the Responder’s job is complete. A thank you message is displayed, and, in a later version of the app, it is the goal of the Bevalix team to find ways to reward the responding community for their service.",
   },
-  blurb9: {
-    paragraph1: "Design system",
-    paragraph2:
-      "As a part of the overall product development and branding, I also established an initial design system within Figma. While I do this for all new products I work with, this one was considerably larger in scale. I worked alongside our engineering team to create a system that made sense to everyone.",
-  },
   challenges: {
     title: "challenges",
     paragraph1:
