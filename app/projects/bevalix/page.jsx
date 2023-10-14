@@ -25,7 +25,6 @@ const Bevalix = () => {
     blurb6,
     blurb7,
     blurb8,
-    blurb9,
     challenges,
     numberedList1,
     numberedList2,
@@ -68,14 +67,6 @@ const Bevalix = () => {
           title={signup.title}
           p1={signup.paragraph1}
           p2={signup.paragraph2}
-        />
-        <Image
-          alt=""
-          src="/bevalix/placeholder.jpg"
-          height={20}
-          width={20}
-          unoptimized={true}
-          className="heightAuto width100"
         />
         <ProjectContent
           title={branding.title}
@@ -132,6 +123,16 @@ const Bevalix = () => {
         <ProjectContent
           p1={mvp[2].paragraph1}
           mvpBullets={mvp[2].bulletPoints}
+        />
+      </div>
+      <div className="projectInnerContainer flexColumnGap56">
+        <Image
+          alt=""
+          src="/bevalix/placeholder.jpg"
+          height={20}
+          width={20}
+          unoptimized={true}
+          className="heightAuto width100"
         />
       </div>
       <div className="projectInnerContainer flexColumnGap56">
@@ -226,16 +227,7 @@ const Bevalix = () => {
         />
         <ProjectContent p1={blurb8.paragraph1} p2={blurb8.paragraph2} />
       </div>
-      <Image
-        alt=""
-        src="/bevalix/placeholder.jpg"
-        height={20}
-        width={20}
-        unoptimized={true}
-        className="heightAuto width100"
-      />
       <div className="projectInnerContainer flexColumnGap56">
-        <ProjectContent p1={blurb9.paragraph1} p2={blurb9.paragraph2} />
         <Image
           alt=""
           src="/bevalix/placeholder.jpg"
