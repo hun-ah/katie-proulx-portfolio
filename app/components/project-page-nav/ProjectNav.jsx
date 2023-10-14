@@ -36,11 +36,7 @@ const ProjectNav = ({ path }) => {
           priority
         />
       </div>
-      <div
-        href={project.href}
-        className={styles.text}
-        onClick={handleLinkClick}
-      >
+      <div className={styles.text} onClick={handleLinkClick}>
         <span className="paragraphRegular">Next case study &gt;&gt;</span>
         <p className="headingBold">{project.title}</p>
       </div>
