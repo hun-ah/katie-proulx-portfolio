@@ -1,9 +1,11 @@
 import Image from "next/image";
-import Link from "next/link";
 import styles from "./projectnav.module.css";
 import { projects } from "@/app/data/projectDetails";
+import { useRouter } from "next/navigation";
 
 const ProjectNav = ({ path }) => {
+  const router = useRouter();
+
   let project;
 
   switch (path) {
@@ -17,24 +19,31 @@ const ProjectNav = ({ path }) => {
       project = projects[0];
   }
 
+  const handleLinkClick = () => {
+    router.push(`${project.href}#next`);
+  };
+
   return (
     <nav className={`projectInnerContainer ${styles.container}`}>
-      <Link href={project.href}>
-        <div className={styles.overlay}>
-          <Image
-            alt={project.alt}
-            src={project.img}
-            height={100}
-            width={100}
-            unoptimized={true}
-            className="imageBorderRadius heightAuto"
-          />
-        </div>
-      </Link>
-      <Link href={project.href} className={styles.text}>
+      <div className={styles.overlay} onClick={handleLinkClick}>
+        <Image
+          alt={project.alt}
+          src={project.img}
+          height={100}
+          width={100}
+          unoptimized={true}
+          className="imageBorderRadius heightAuto"
+          priority
+        />
+      </div>
+      <div
+        href={project.href}
+        className={styles.text}
+        onClick={handleLinkClick}
+      >
         <span className="paragraphRegular">Next case study &gt;&gt;</span>
         <p className="headingBold">{project.title}</p>
-      </Link>
+      </div>
     </nav>
   );
 };
