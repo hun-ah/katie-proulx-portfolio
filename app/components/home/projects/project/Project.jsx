@@ -1,6 +1,6 @@
-import styles from "./project.module.css";
-import Image from "next/image";
-import Link from "next/link";
+import styles from './project.module.css';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const Project = ({ company, title, img, href, alt }) => {
   return (
@@ -8,11 +8,11 @@ const Project = ({ company, title, img, href, alt }) => {
       <Link href={`${href}`} className={styles.container}>
         <Image
           alt={alt}
-          height="0"
-          width="0"
+          height='0'
+          width='0'
           src={img}
           unoptimized={true}
-          style={{ width: "452px", height: "auto" }}
+          style={{ width: '452px', height: 'auto' }}
           priority
         />
         <div className={styles.textContainer}>

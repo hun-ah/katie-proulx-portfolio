@@ -1,12 +1,12 @@
-"use client";
-import styles from "./page.module.css";
-import TLDR from "@/app/components/tldr/TLDR";
-import ProjectContent from "@/app/components/project-content/ProjectContent";
-import DownloadApp from "@/app/components/bevalix-download/DownloadApp";
-import Image from "next/image";
-import { content } from "@/app/data/bevalixPageDetails";
-import { useAppContext as ProjectDetailsContext } from "@/app/components/contexts/ProjectDetailsContext";
-import NumberedCard from "@/app/components/numbered-card/NumberedCard";
+'use client';
+import styles from './page.module.css';
+import TLDR from '@/app/components/tldr/TLDR';
+import ProjectContent from '@/app/components/project-content/ProjectContent';
+import DownloadApp from '@/app/components/bevalix-download/DownloadApp';
+import Image from 'next/image';
+import { content } from '@/app/data/bevalixPageDetails';
+import { useAppContext as ProjectDetailsContext } from '@/app/components/contexts/ProjectDetailsContext';
+import NumberedCard from '@/app/components/numbered-card/NumberedCard';
 
 const Bevalix = () => {
   const {
@@ -33,30 +33,30 @@ const Bevalix = () => {
 
   return (
     <>
-      <div className="projectInnerContainer flexColumnGap56">
+      <div className='projectInnerContainer flexColumnGap56'>
         <ProjectContent
           title={problem.title}
           p1={problem.paragraph1}
           p2={problem.paragraph2}
         />
         <Image
-          alt="Bevalix graphic on mobile phones"
-          src="/bevalix/screen2.jpg"
+          alt='Bevalix graphic on mobile phones'
+          src='/bevalix/screen2.jpg'
           height={20}
           width={20}
           unoptimized={true}
-          className="heightAuto width100"
+          className='heightAuto width100'
         />
       </div>
       <TLDR project={project} />
-      <div className="projectInnerContainer flexColumnGap56">
+      <div className='projectInnerContainer flexColumnGap56'>
         <Image
-          alt="Bevalix graphic on mobile phones"
-          src="/bevalix/screen3.jpg"
+          alt='Bevalix graphic on mobile phones'
+          src='/bevalix/screen3.jpg'
           height={20}
           width={20}
           unoptimized={true}
-          className="heightAuto width100"
+          className='heightAuto width100'
         />
         <ProjectContent
           title={onboarding.title}
@@ -64,12 +64,12 @@ const Bevalix = () => {
           p2={onboarding.paragraph2}
         />
         <Image
-          alt="Bevalix graphic on mobile phones"
-          src="/bevalix/screen4.jpg"
+          alt='Bevalix graphic on mobile phones'
+          src='/bevalix/screen4.jpg'
           height={20}
           width={20}
           unoptimized={true}
-          className="heightAuto width100"
+          className='heightAuto width100'
         />
         <ProjectContent
           title={signup.title}
@@ -82,12 +82,12 @@ const Bevalix = () => {
           p2={branding.paragraph2}
         />
         <Image
-          alt="Bevalix graphic on mobile phones"
-          src="/bevalix/screen5.jpg"
+          alt='Bevalix graphic on mobile phones'
+          src='/bevalix/screen5.jpg'
           height={20}
           width={20}
           unoptimized={true}
-          className="heightAuto width100"
+          className='heightAuto width100'
         />
         <ProjectContent
           title={discovery.title}
@@ -96,8 +96,8 @@ const Bevalix = () => {
         />
       </div>
       <div className={`projectInnerContainer ${styles.doubleContainerParent}`}>
-        <h5 className="overline">{primaryUsers[0].title}</h5>
-        <div className="doubleContainer">
+        <h5 className='overline'>{primaryUsers[0].title}</h5>
+        <div className='doubleContainer'>
           <ProjectContent
             p1={primaryUsers[0].paragraph1}
             p2={primaryUsers[0].paragraph2}
@@ -108,24 +108,24 @@ const Bevalix = () => {
           />
         </div>
       </div>
-      <div className="projectInnerContainer flexColumnGap56">
+      <div className='projectInnerContainer flexColumnGap56'>
         <Image
-          alt="Bevalix graphic on mobile phones"
-          src="/bevalix/screen6.jpg"
+          alt='Bevalix graphic on mobile phones'
+          src='/bevalix/screen6.jpg'
           height={20}
           width={20}
           unoptimized={true}
-          className="heightAuto width100"
+          className='heightAuto width100'
         />
       </div>
-      <div className="projectInnerContainer flexColumnGap56">
+      <div className='projectInnerContainer flexColumnGap56'>
         <ProjectContent
           title={mvp[0].title}
           p1={mvp[0].paragraph1}
           p2={mvp[0].paragraph2}
         />
       </div>
-      <div className="projectInnerContainer doubleContainer">
+      <div className='projectInnerContainer doubleContainer'>
         <ProjectContent
           p1={mvp[1].paragraph1}
           mvpBullets={mvp[1].bulletPoints}
@@ -135,42 +135,42 @@ const Bevalix = () => {
           mvpBullets={mvp[2].bulletPoints}
         />
       </div>
-      <div className="projectInnerContainer flexColumnGap56">
+      <div className='projectInnerContainer flexColumnGap56'>
         <Image
-          alt="Bevalix graphic on mobile phones"
-          src="/bevalix/screen7.jpg"
+          alt='Bevalix graphic on mobile phones'
+          src='/bevalix/screen7.jpg'
           height={20}
           width={20}
           unoptimized={true}
-          className="heightAuto width100"
+          className='heightAuto width100'
         />
       </div>
-      <div className="projectInnerContainer flexColumnGap56">
+      <div className='projectInnerContainer flexColumnGap56'>
         <Image
-          alt="Bevalix graphic on mobile phones"
-          src="/bevalix/screen8.jpg"
+          alt='Bevalix graphic on mobile phones'
+          src='/bevalix/screen8.jpg'
           height={20}
           width={20}
           unoptimized={true}
-          className="heightAuto width100"
+          className='heightAuto width100'
         />
         <ProjectContent p1={blurb1.paragraph1} p2={blurb1.paragraph2} />
         <Image
-          alt="Bevalix graphic on mobile phones"
-          src="/bevalix/screen9.jpg"
+          alt='Bevalix graphic on mobile phones'
+          src='/bevalix/screen9.jpg'
           height={20}
           width={20}
           unoptimized={true}
-          className="heightAuto width100"
+          className='heightAuto width100'
         />
         <ProjectContent p1={blurb2.paragraph1} p2={blurb2.paragraph2} />
         <Image
-          alt="Bevalix graphic on mobile phones"
-          src="/bevalix/screen10.jpg"
+          alt='Bevalix graphic on mobile phones'
+          src='/bevalix/screen10.jpg'
           height={20}
           width={20}
           unoptimized={true}
-          className="heightAuto width100"
+          className='heightAuto width100'
         />
         <ProjectContent p1={blurb3.paragraph1} />
         <ul className={styles.numberedCardContainer}>
@@ -183,12 +183,12 @@ const Bevalix = () => {
           ))}
         </ul>
         <Image
-          alt="Bevalix graphic on mobile phones"
-          src="/bevalix/screen11.jpg"
+          alt='Bevalix graphic on mobile phones'
+          src='/bevalix/screen11.jpg'
           height={20}
           width={20}
           unoptimized={true}
-          className="heightAuto width100"
+          className='heightAuto width100'
         />
         <ProjectContent p1={blurb4.paragraph1} p2={blurb4.paragraph2} />
         <ul className={styles.numberedCardContainer}>
@@ -201,59 +201,59 @@ const Bevalix = () => {
           ))}
         </ul>
         <Image
-          alt="Bevalix graphic on mobile phones"
-          src="/bevalix/screen12.jpg"
+          alt='Bevalix graphic on mobile phones'
+          src='/bevalix/screen12.jpg'
           height={20}
           width={20}
           unoptimized={true}
-          className="heightAuto width100"
+          className='heightAuto width100'
         />
         <ProjectContent p1={blurb5.paragraph1} p2={blurb5.paragraph2} />
         <Image
-          alt="Bevalix graphic on mobile phones"
-          src="/bevalix/screen13.jpg"
+          alt='Bevalix graphic on mobile phones'
+          src='/bevalix/screen13.jpg'
           height={20}
           width={20}
           unoptimized={true}
-          className="heightAuto width100"
+          className='heightAuto width100'
         />
         <ProjectContent p1={blurb6.paragraph1} p2={blurb6.paragraph2} />
         <Image
-          alt="Bevalix graphic on mobile phones"
-          src="/bevalix/screen14.jpg"
+          alt='Bevalix graphic on mobile phones'
+          src='/bevalix/screen14.jpg'
           height={20}
           width={20}
           unoptimized={true}
-          className="heightAuto width100"
+          className='heightAuto width100'
         />
         <ProjectContent p1={blurb7.paragraph1} p2={blurb7.paragraph2} />
         <Image
-          alt="Bevalix graphic on mobile phones"
-          src="/bevalix/screen15.jpg"
+          alt='Bevalix graphic on mobile phones'
+          src='/bevalix/screen15.jpg'
           height={20}
           width={20}
           unoptimized={true}
-          className="heightAuto width100"
+          className='heightAuto width100'
         />
         <ProjectContent p1={blurb8.paragraph1} p2={blurb8.paragraph2} />
       </div>
-      <div className="projectInnerContainer flexColumnGap56">
+      <div className='projectInnerContainer flexColumnGap56'>
         <Image
-          alt="Bevalix graphic on mobile phones"
-          src="/bevalix/screen16.jpg"
+          alt='Bevalix graphic on mobile phones'
+          src='/bevalix/screen16.jpg'
           height={20}
           width={20}
           unoptimized={true}
-          className="heightAuto width100"
+          className='heightAuto width100'
         />
         <ProjectContent
           title={challenges.title}
           p1={challenges.paragraph1}
           p2={challenges.paragraph2}
         />
-        <span className="projectEmoji">🇫🇷</span>
+        <span className='projectEmoji'>🇫🇷</span>
       </div>
-      <div className="projectInnerContainer downloadContainer">
+      <div className='projectInnerContainer downloadContainer'>
         <DownloadApp />
       </div>
     </>

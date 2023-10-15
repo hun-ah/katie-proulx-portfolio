@@ -1,12 +1,12 @@
-"use client";
-import React from "react";
-import "animate.css";
-import styles from "./layout.module.css";
-import ProjectHeader from "../components/project-header/ProjectHeader";
-import ProjectNav from "../components/project-page-nav/ProjectNav";
-import Image from "next/image";
-import { useEffect } from "react";
-import { useAppContext as ProjectDetailsContext } from "@/app/components/contexts/ProjectDetailsContext";
+'use client';
+import React from 'react';
+import 'animate.css';
+import styles from './layout.module.css';
+import ProjectHeader from '../components/project-header/ProjectHeader';
+import ProjectNav from '../components/project-page-nav/ProjectNav';
+import Image from 'next/image';
+import { useEffect } from 'react';
+import { useAppContext as ProjectDetailsContext } from '@/app/components/contexts/ProjectDetailsContext';
 
 const ProjectLayout = ({ children }) => {
   const { project, path } = ProjectDetailsContext();
@@ -15,7 +15,7 @@ const ProjectLayout = ({ children }) => {
     window.scrollTo({
       top: 0,
       left: 0,
-      behavior: "instant",
+      behavior: 'instant',
     });
   }, []);
 

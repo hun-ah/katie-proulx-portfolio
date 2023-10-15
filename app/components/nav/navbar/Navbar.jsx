@@ -1,9 +1,9 @@
-"use client";
-import styles from "./navbar.module.css";
-import Link from "next/link";
-import Image from "next/image";
-import Hamburger from "../hamburger/Hamburger";
-import { useAppContext as ModalContext } from "@/app/components/contexts/ModalContext";
+'use client';
+import styles from './navbar.module.css';
+import Link from 'next/link';
+import Image from 'next/image';
+import Hamburger from '../hamburger/Hamburger';
+import { useAppContext as ModalContext } from '@/app/components/contexts/ModalContext';
 
 const Navbar = () => {
   const { setOpenContactModal } = ModalContext();
@@ -16,15 +16,15 @@ const Navbar = () => {
     setOpenContactModal(false);
   };
 
-  const navlinks = [{ name: "work" }, { name: "about" }, { name: "contact" }];
+  const navlinks = [{ name: 'work' }, { name: 'about' }, { name: 'contact' }];
 
   return (
     <header className={styles.container}>
       <section className={styles.section}>
-        <Link href="/" onClick={closeModal}>
+        <Link href='/' onClick={closeModal}>
           <Image
-            src="/logo.svg"
-            alt="Katie Proulx, Product Designer"
+            src='/logo.svg'
+            alt='Katie Proulx, Product Designer'
             width={170}
             height={12}
             priority
@@ -32,7 +32,7 @@ const Navbar = () => {
         </Link>
         <ul className={styles.navlinks}>
           {navlinks.map((navlink) =>
-            navlink.name == "contact" ? (
+            navlink.name == 'contact' ? (
               <li
                 key={navlink.name}
                 className={`${styles.navlink} paragraphRegular`}
@@ -46,7 +46,7 @@ const Navbar = () => {
                 className={`${styles.navlink} paragraphRegular`}
               >
                 <Link
-                  href={`${navlink.name == "work" ? "/" : `/${navlink.name}`}`}
+                  href={`${navlink.name == 'work' ? '/' : `/${navlink.name}`}`}
                 >
                   {navlink.name}
                 </Link>

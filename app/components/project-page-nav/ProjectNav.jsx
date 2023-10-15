@@ -1,7 +1,7 @@
-import Image from "next/image";
-import styles from "./projectnav.module.css";
-import { projects } from "@/app/data/projectDetails";
-import { useRouter } from "next/navigation";
+import Image from 'next/image';
+import styles from './projectnav.module.css';
+import { projects } from '@/app/data/projectDetails';
+import { useRouter } from 'next/navigation';
 
 const ProjectNav = ({ path }) => {
   const router = useRouter();
@@ -9,13 +9,13 @@ const ProjectNav = ({ path }) => {
   let project;
 
   switch (path) {
-    case "theScore":
+    case 'theScore':
       project = projects[2];
       break;
-    case "bevalix":
+    case 'bevalix':
       project = projects[1];
       break;
-    case "project-3":
+    case 'project-3':
       project = projects[0];
   }
 
@@ -32,13 +32,13 @@ const ProjectNav = ({ path }) => {
           height={100}
           width={100}
           unoptimized={true}
-          className="imageBorderRadius heightAuto"
+          className='imageBorderRadius heightAuto'
           priority
         />
       </div>
       <div className={styles.text} onClick={handleLinkClick}>
-        <span className="paragraphRegular">Next case study &gt;&gt;</span>
-        <p className="headingBold">{project.title}</p>
+        <span className='paragraphRegular'>Next case study &gt;&gt;</span>
+        <p className='headingBold'>{project.title}</p>
       </div>
     </nav>
   );

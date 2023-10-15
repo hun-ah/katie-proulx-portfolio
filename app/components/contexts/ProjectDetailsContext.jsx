@@ -1,23 +1,23 @@
-"use client";
-import React, { createContext, useContext } from "react";
-import { projectDetails } from "@/app/data/projectDetails";
-import { usePathname } from "next/navigation";
+'use client';
+import React, { createContext, useContext } from 'react';
+import { projectDetails } from '@/app/data/projectDetails';
+import { usePathname } from 'next/navigation';
 
 const ProjectDetailsContext = createContext();
 
 export const ProjectDetailsProvider = ({ children }) => {
   const pathname = usePathname();
-  const path = pathname.split("/").slice(-1).toString();
+  const path = pathname.split('/').slice(-1).toString();
 
   let project;
   switch (path) {
-    case "theScore":
+    case 'theScore':
       project = projectDetails[0];
       break;
-    case "bevalix":
+    case 'bevalix':
       project = projectDetails[1];
       break;
-    case "project-3":
+    case 'project-3':
       project = projectDetails[2];
   }
 
