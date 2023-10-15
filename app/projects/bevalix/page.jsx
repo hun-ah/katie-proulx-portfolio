@@ -40,8 +40,8 @@ const Bevalix = () => {
           p2={problem.paragraph2}
         />
         <Image
-          alt=""
-          src="/bevalix/placeholder.jpg"
+          alt="Bevalix graphic on mobile phones"
+          src="/bevalix/screen2.jpg"
           height={20}
           width={20}
           unoptimized={true}
@@ -50,14 +50,22 @@ const Bevalix = () => {
       </div>
       <TLDR project={project} />
       <div className="projectInnerContainer flexColumnGap56">
+        <Image
+          alt="Bevalix graphic on mobile phones"
+          src="/bevalix/screen3.jpg"
+          height={20}
+          width={20}
+          unoptimized={true}
+          className="heightAuto width100"
+        />
         <ProjectContent
           title={onboarding.title}
           p1={onboarding.paragraph1}
           p2={onboarding.paragraph2}
         />
         <Image
-          alt=""
-          src="/bevalix/placeholder.jpg"
+          alt="Bevalix graphic on mobile phones"
+          src="/bevalix/screen4.jpg"
           height={20}
           width={20}
           unoptimized={true}
@@ -74,8 +82,8 @@ const Bevalix = () => {
           p2={branding.paragraph2}
         />
         <Image
-          alt=""
-          src="/bevalix/placeholder.jpg"
+          alt="Bevalix graphic on mobile phones"
+          src="/bevalix/screen5.jpg"
           height={20}
           width={20}
           unoptimized={true}
@@ -102,13 +110,15 @@ const Bevalix = () => {
       </div>
       <div className="projectInnerContainer flexColumnGap56">
         <Image
-          alt=""
-          src="/bevalix/placeholder.jpg"
+          alt="Bevalix graphic on mobile phones"
+          src="/bevalix/screen6.jpg"
           height={20}
           width={20}
           unoptimized={true}
           className="heightAuto width100"
         />
+      </div>
+      <div className="projectInnerContainer flexColumnGap56">
         <ProjectContent
           title={mvp[0].title}
           p1={mvp[0].paragraph1}
@@ -127,8 +137,8 @@ const Bevalix = () => {
       </div>
       <div className="projectInnerContainer flexColumnGap56">
         <Image
-          alt=""
-          src="/bevalix/placeholder.jpg"
+          alt="Bevalix graphic on mobile phones"
+          src="/bevalix/screen7.jpg"
           height={20}
           width={20}
           unoptimized={true}
@@ -137,8 +147,8 @@ const Bevalix = () => {
       </div>
       <div className="projectInnerContainer flexColumnGap56">
         <Image
-          alt=""
-          src="/bevalix/placeholder.jpg"
+          alt="Bevalix graphic on mobile phones"
+          src="/bevalix/screen8.jpg"
           height={20}
           width={20}
           unoptimized={true}
@@ -146,8 +156,8 @@ const Bevalix = () => {
         />
         <ProjectContent p1={blurb1.paragraph1} p2={blurb1.paragraph2} />
         <Image
-          alt=""
-          src="/bevalix/placeholder.jpg"
+          alt="Bevalix graphic on mobile phones"
+          src="/bevalix/screen9.jpg"
           height={20}
           width={20}
           unoptimized={true}
@@ -155,8 +165,8 @@ const Bevalix = () => {
         />
         <ProjectContent p1={blurb2.paragraph1} p2={blurb2.paragraph2} />
         <Image
-          alt=""
-          src="/bevalix/placeholder.jpg"
+          alt="Bevalix graphic on mobile phones"
+          src="/bevalix/screen10.jpg"
           height={20}
           width={20}
           unoptimized={true}
@@ -173,8 +183,8 @@ const Bevalix = () => {
           ))}
         </ul>
         <Image
-          alt=""
-          src="/bevalix/placeholder.jpg"
+          alt="Bevalix graphic on mobile phones"
+          src="/bevalix/screen11.jpg"
           height={20}
           width={20}
           unoptimized={true}
@@ -191,8 +201,8 @@ const Bevalix = () => {
           ))}
         </ul>
         <Image
-          alt=""
-          src="/bevalix/placeholder.jpg"
+          alt="Bevalix graphic on mobile phones"
+          src="/bevalix/screen12.jpg"
           height={20}
           width={20}
           unoptimized={true}
@@ -200,8 +210,8 @@ const Bevalix = () => {
         />
         <ProjectContent p1={blurb5.paragraph1} p2={blurb5.paragraph2} />
         <Image
-          alt=""
-          src="/bevalix/placeholder.jpg"
+          alt="Bevalix graphic on mobile phones"
+          src="/bevalix/screen13.jpg"
           height={20}
           width={20}
           unoptimized={true}
@@ -209,8 +219,8 @@ const Bevalix = () => {
         />
         <ProjectContent p1={blurb6.paragraph1} p2={blurb6.paragraph2} />
         <Image
-          alt=""
-          src="/bevalix/placeholder.jpg"
+          alt="Bevalix graphic on mobile phones"
+          src="/bevalix/screen14.jpg"
           height={20}
           width={20}
           unoptimized={true}
@@ -218,8 +228,8 @@ const Bevalix = () => {
         />
         <ProjectContent p1={blurb7.paragraph1} p2={blurb7.paragraph2} />
         <Image
-          alt=""
-          src="/bevalix/placeholder.jpg"
+          alt="Bevalix graphic on mobile phones"
+          src="/bevalix/screen15.jpg"
           height={20}
           width={20}
           unoptimized={true}
@@ -229,8 +239,8 @@ const Bevalix = () => {
       </div>
       <div className="projectInnerContainer flexColumnGap56">
         <Image
-          alt=""
-          src="/bevalix/placeholder.jpg"
+          alt="Bevalix graphic on mobile phones"
+          src="/bevalix/screen16.jpg"
           height={20}
           width={20}
           unoptimized={true}
