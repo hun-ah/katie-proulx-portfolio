@@ -107,9 +107,10 @@ export const projects = [
   {
     id: 3,
     company: 'UI design',
-    img: '/thescore/img-main.jpg',
-    alt: '',
-    title: 'Building something something yes',
+    img: '/ui-design/agilno-teams.jpg',
+    alt: 'Agilno teams website screens',
+    title:
+      'From sports & entertainment to suite and team management dashboards',
     href: '/projects/ui-design',
   },
 ];
