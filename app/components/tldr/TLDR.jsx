@@ -6,7 +6,7 @@ const TLDR = ({ project }) => {
   const projectInfo = project.project;
 
   let cardClass;
-  switch (projectInfo.client) {
+  switch (projectInfo.projectTitle) {
     case 'Bevalix':
       cardClass = styles.bevalixCards;
       break;
