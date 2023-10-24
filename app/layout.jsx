@@ -21,7 +21,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang='en' id='next'>
+    <html lang='en' id='page'>
       <body className={publicSans.className}>
         <ModalProvider>
           <MenuProvider>
