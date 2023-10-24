@@ -23,19 +23,21 @@ const ProjectHeader = ({ project }) => {
       <header
         className={`${styles.container} projectInnerContainer customAnimation`}
       >
-        <span className='paragraphRegular'>{project.client}</span>
+        <span className='paragraphRegular'>{project.projectTitle}</span>
         <h1 className='headingBoldLarge'>{project.title}</h1>
         {textLines}
-        <ul className={styles.projectDetails}>
-          {titles.map((title, index) => (
-            <ProjectDetail
-              key={title.heading}
-              title={title.heading}
-              icon={title.icon}
-              text={values[index]}
-            />
-          ))}
-        </ul>
+        {project.industry && (
+          <ul className={styles.projectDetails}>
+            {titles.map((title, index) => (
+              <ProjectDetail
+                key={title.heading}
+                title={title.heading}
+                icon={title.icon}
+                text={values[index]}
+              />
+            ))}
+          </ul>
+        )}
       </header>
     </div>
   );
