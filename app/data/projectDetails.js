@@ -1,6 +1,6 @@
 export const projectDetails = [
   {
-    client: 'theScore | Bet',
+    projectTitle: 'theScore | Bet',
     industry: 'Sports betting',
     myRole: 'Product design',
     duration: '3 months',
@@ -33,7 +33,7 @@ export const projectDetails = [
     tldrTitle: 'outcomes',
   },
   {
-    client: 'Bevalix',
+    projectTitle: 'Bevalix',
     industry: 'Health & fitness',
     myRole: 'Product design\nBranding',
     duration: '2 months',
@@ -77,35 +77,11 @@ export const projectDetails = [
     tldrTitle: 'goals',
   },
   {
-    client: 'UI design',
-    industry: 'Amnimals',
-    myRole: 'Product design',
-    duration: '10 months',
+    projectTitle: 'UI design',
     description:
-      'theScore | Bet is a major Canadian sports betting app that launched in April 2022. A major feature I worked to design and implement post-launch was Parlay+. This feature was highly anticipated and allows users to create parlay bets by combining selections from the same game.',
+      'I’ve worked with countless clients, including professional sports teams (NHL, NBA, NFL, MLB, MLS), arenas, and organizations. I have a passion for sports, though I have also broadened my capabilities in the past 3 years to include many other industries as well.',
     title:
-      'Transforming sports betting with a feature highly anticipated by users',
-    mainImg: '/thescore/screen1.jpg',
-    alt: '',
-    tldrCards: [
-      {
-        id: 1,
-        icon: '',
-        text: '',
-      },
-      {
-        id: 2,
-        icon: '',
-        text: '',
-      },
-      {
-        id: 3,
-        icon: '',
-        text: '',
-      },
-    ],
-    tldrBlurb: '',
-    tldrTitle: '',
+      'For the past 10 years, I’ve been designing UI/UX for websites and apps.',
   },
 ];
 
