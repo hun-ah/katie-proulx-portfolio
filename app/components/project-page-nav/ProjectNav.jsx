@@ -15,7 +15,7 @@ const ProjectNav = ({ path }) => {
     case 'bevalix':
       project = projects[1];
       break;
-    case 'project-3':
+    case 'ui-design':
       project = projects[0];
   }
 
@@ -37,7 +37,7 @@ const ProjectNav = ({ path }) => {
         />
       </div>
       <div className={styles.text} onClick={handleLinkClick}>
-        <span className='paragraphRegular'>Next case study &gt;&gt;</span>
+        <span className='paragraphRegular'>Next &gt;&gt;</span>
         <p className='headingBold'>{project.title}</p>
       </div>
     </nav>
