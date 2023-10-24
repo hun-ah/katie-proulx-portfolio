@@ -5,7 +5,7 @@ import Link from 'next/link';
 const Project = ({ company, title, img, href, alt }) => {
   return (
     <li>
-      <Link href={`${href}`} className={styles.container}>
+      <Link href={`${href}#page`} className={styles.container}>
         <Image
           alt={alt}
           height='0'
