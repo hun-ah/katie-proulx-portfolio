@@ -20,7 +20,7 @@ const ProjectNav = ({ path }) => {
   }
 
   const handleLinkClick = () => {
-    router.push(`${project.href}#next`);
+    router.push(`${project.href}#page`);
   };
 
   return (
