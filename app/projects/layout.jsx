@@ -22,15 +22,17 @@ const ProjectLayout = ({ children }) => {
   return (
     <main className={styles.container}>
       <ProjectHeader project={project} />
-      <Image
-        alt={project.alt}
-        height={20}
-        width={20}
-        src={project.mainImg}
-        className={`heightAuto width100 ${styles.mainImg} animationDelay animate__animated animate__fadeIn`}
-        unoptimized={true}
-        priority
-      />
+      {project.mainImg && (
+        <Image
+          alt={project.alt}
+          height={20}
+          width={20}
+          src={project.mainImg}
+          className={`heightAuto width100 ${styles.mainImg} animationDelay animate__animated animate__fadeIn`}
+          unoptimized={true}
+          priority
+        />
+      )}
       <section
         className={`flexColumnGap56 animationDelay animate__animated animate__fadeIn `}
       >
