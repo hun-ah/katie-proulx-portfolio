@@ -17,7 +17,7 @@ export const ProjectDetailsProvider = ({ children }) => {
     case 'bevalix':
       project = projectDetails[1];
       break;
-    case 'project-3':
+    case 'ui-design':
       project = projectDetails[2];
   }
 
