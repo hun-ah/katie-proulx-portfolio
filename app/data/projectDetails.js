@@ -130,7 +130,7 @@ export const projects = [
   },
   {
     id: 3,
-    company: 'company3',
+    company: 'UI design',
     img: '/thescore/img-main.jpg',
     alt: '',
     title: 'Building something something yes',
