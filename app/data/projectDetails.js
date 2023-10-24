@@ -77,7 +77,7 @@ export const projectDetails = [
     tldrTitle: 'goals',
   },
   {
-    client: 'Vetster',
+    client: 'UI design',
     industry: 'Amnimals',
     myRole: 'Product design',
     duration: '10 months',
@@ -134,6 +134,6 @@ export const projects = [
     img: '/thescore/img-main.jpg',
     alt: '',
     title: 'Building something something yes',
-    href: '/projects/project-3',
+    href: '/projects/ui-design',
   },
 ];
