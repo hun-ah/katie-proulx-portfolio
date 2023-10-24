@@ -8,11 +8,12 @@ const Project = ({ company, title, img, href, alt }) => {
       <Link href={`${href}#page`} className={styles.container}>
         <Image
           alt={alt}
-          height='0'
-          width='0'
+          height={0}
+          width={452}
           src={img}
           unoptimized={true}
-          style={{ width: '452px', height: 'auto' }}
+          style={{ height: 'auto' }}
+          className='imageBorderRadius'
           priority
         />
         <div className={styles.textContainer}>
