@@ -14,17 +14,17 @@ export const projectDetails = [
     tldrCards: [
       {
         id: 1,
-        icon: '/theScore/icons/dollar-sign.svg',
+        icon: '/thescore/icons/dollar-sign.svg',
         title: 'Increased GGR (Gross Gaming Revenue)',
       },
       {
         id: 2,
-        icon: '/theScore/icons/coins.svg',
+        icon: '/thescore/icons/coins.svg',
         title: 'Increased Number of Bets Placed Per Month',
       },
       {
         id: 3,
-        icon: '/theScore/icons/user-switch.svg',
+        icon: '/thescore/icons/user-switch.svg',
         title: 'Improved retention & acquisition',
       },
     ],
