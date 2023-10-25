@@ -11,7 +11,7 @@ const DownloadApp = () => {
         src='/thescore/icons/scoreBET.svg'
       />
       <div className={styles.btnContainer}>
-        <p className={`overline ${styles.text}`}>Download the app</p>
+        <p className='overline uppercaseSecondary'>Download the app</p>
         <div>
           <a
             href='https://apps.apple.com/ca/app/thescore-bet-sports-betting/id1465992052'

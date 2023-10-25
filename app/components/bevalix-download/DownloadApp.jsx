@@ -10,7 +10,7 @@ const DownloadApp = () => {
         width={140}
         src='/bevalix/icons/bevalix.svg'
       />
-      <p className={`overline ${styles.text}`}>🚧 APP IN DEVELOPMENT</p>
+      <p className='overline uppercaseSecondary'>🚧 APP IN DEVELOPMENT</p>
     </section>
   );
 };
