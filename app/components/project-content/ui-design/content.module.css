@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: var(--textPrimary);
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.container a {
+  color: var(--linkDefault);
+  width: fit-content;
+  display: flex;
+  gap: 4px;
+}
+
+.linkContainer a:hover,
+.linkContainer a:hover > svg * {
+  color: var(--linkHover);
+  stroke: var(--linkHover);
+}
+
+.linkContainer a > svg {
+  margin-top: 0;
+}
