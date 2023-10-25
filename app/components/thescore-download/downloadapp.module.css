@@ -13,8 +13,3 @@
   flex-direction: column;
   gap: 16px;
 }
-
-.text {
-  color: var(--textSecondary);
-  text-transform: uppercase;
-}

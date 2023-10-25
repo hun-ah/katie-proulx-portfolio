@@ -8,8 +8,3 @@
   justify-content: center;
   padding: 40px 24px;
 }
-
-.text {
-  color: var(--textSecondary);
-  text-transform: uppercase;
-}
