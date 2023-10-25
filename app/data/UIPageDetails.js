@@ -1,5 +1,6 @@
 export const content = {
   agilnoTeams: {
+    projectName: 'Agilno Teams',
     heading: 'An external team management platform for clients',
     subheading:
       'A team management platform as well as a team building service where clients would be able to manage & create new digital product teams with Agilno. From hour tracking to team member management to invoicing and agreement signing, the purpose of the platform is to make it easy to stand up new teams and manage existing ones. The overall platform is currently in discovery.',
@@ -10,6 +11,7 @@ export const content = {
     },
   },
   fitnessWorld: {
+    projectName: 'Fitness World',
     heading: 'Fitness World’s website – complete redesign',
     subheading:
       'Fitness World approached our team with a challenge: redesign their entire website to reflect their new brand. They also had 3 primary KPI’s in mind: they needed to increase online revenue, improve overall SEO, and optimize for lead generation & conversion. With those KPI’s in mind, we collaborated with their sales and marketing team to build and launch their new site, on time and on vision. I was the lead UI/UX designer, and worked closely with their branding team to ensure alignment.',
@@ -21,6 +23,7 @@ export const content = {
     },
   },
   championLA: {
+    projectName: 'Champion LA',
     heading:
       'Fundraising to secure high-profile, impactful sports & entertainment events for the LA area',
     subheading:
@@ -32,6 +35,7 @@ export const content = {
     },
   },
   sofiStadium: {
+    projectName: 'Sofi Stadium',
     heading:
       'In order to be a host city for events like these, a lot of fundraising needs to be done. I designed a website that would facilitate that fundraising by selling exclusive Super Bowl experience packages. We sent personalized urls to a specific audience of businesses and individuals.',
     subheading:
