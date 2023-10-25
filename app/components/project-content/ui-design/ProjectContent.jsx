@@ -27,7 +27,6 @@ const ProjectContent = ({ heading, subheading, link, logo }) => {
         </div>
       )}
       <div className={styles.textContainer}>
-        {/* <p className='paragraphLarge'>{subheading}</p> */}
         {textLines}
         <p className='paragraphBold'>Client</p>
         <Image alt='' height={logo.height} width={logo.width} src={logo.path} />
