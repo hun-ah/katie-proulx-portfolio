@@ -1,36 +1,47 @@
+'use client';
 import Image from 'next/image';
-import Link from 'next/link';
 import styles from './page.module.css';
 import ProjectContent from '@/app/components/project-content/ui-design/ProjectContent';
 import { content } from '@/app/data/UIPageDetails';
+import React, { useRef } from 'react';
 
 const UIDesign = () => {
   const { agilnoTeams, fitnessWorld, championLA, sofiStadium } = content;
+
+  const refs = {
+    agilnoTeams: useRef(null),
+    fitnessWorld: useRef(null),
+    championLA: useRef(null),
+    sofiStadium: useRef(null),
+  };
+
+  const handleScroll = (key) => {
+    const ref = refs[key];
+    if (ref && ref.current) {
+      window.scrollTo({
+        top: ref.current.offsetTop - 56,
+        left: 0,
+        behavior: 'smooth',
+      });
+    }
+  };
 
   return (
     <>
       <div className={`projectInnerContainer ${styles.featured}`}>
         <h2 className='paragraphSmall'>Featured Projects ⬇️</h2>
         <ul>
-          <li>
-            <Link href='/'>Agilno Teams</Link>
-          </li>
-          <li>
-            <Link href='/'>Agilno Teams</Link>
-          </li>
-          <li>
-            <Link href='/'>Agilno Teams</Link>
-          </li>
-          <li>
-            <Link href='/'>Agilno Teams</Link>
-          </li>
-          <li>
-            <Link href='/'>Agilno Teams</Link>
-          </li>
+          {Object.keys(content).map((key) => {
+            return (
+              <li key={key} onClick={() => handleScroll(key)}>
+                <span>{content[key].projectName}</span>
+              </li>
+            );
+          })}
         </ul>
       </div>
       <div className='projectInnerContainer'>
-        <div className={styles.divider}></div>
+        <div className={`${styles.divider} ${styles.marginLarge}`}></div>
       </div>
       <div className='projectInnerContainer'>
         <Image
@@ -43,7 +54,10 @@ const UIDesign = () => {
         />
       </div>
       <div className='projectInnerContainer'>
-        <div className={styles.divider}></div>
+        <div
+          className={`${styles.divider} ${styles.marginLarge}`}
+          ref={refs.agilnoTeams}
+        ></div>
       </div>
       <div className='projectInnerContainer'>
         <ProjectContent
@@ -60,7 +74,7 @@ const UIDesign = () => {
         className='heightAuto width100'
         unoptimized={true}
       />
-      <div className={styles.divider}></div>
+      <div className={styles.divider} ref={refs.fitnessWorld}></div>
       <div className='projectInnerContainer'>
         <ProjectContent
           heading={fitnessWorld.heading}
@@ -77,7 +91,7 @@ const UIDesign = () => {
         className='heightAuto width100'
         unoptimized={true}
       />
-      <div className={styles.divider}></div>
+      <div className={styles.divider} ref={refs.championLA}></div>
       <div className='projectInnerContainer'>
         <ProjectContent
           heading={championLA.heading}
@@ -93,6 +107,7 @@ const UIDesign = () => {
         className='heightAuto width100'
         unoptimized={true}
       />
+      <div className={styles.divider} ref={refs.sofiStadium}></div>
       <div className='projectInnerContainer'>
         <ProjectContent
           heading={sofiStadium.heading}
