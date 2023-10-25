@@ -1,6 +1,5 @@
 import styles from './TLDR.module.css';
 import Card from './cards/card';
-import Image from 'next/image';
 
 const TLDR = ({ project }) => {
   const projectInfo = project.project;
@@ -13,7 +12,6 @@ const TLDR = ({ project }) => {
     case 'theScore | Bet':
       cardClass = styles.theScoreCards;
       break;
-    // need to fill in project 3
   }
 
   return (
