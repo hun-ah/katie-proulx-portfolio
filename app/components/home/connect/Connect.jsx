@@ -1,3 +1,4 @@
+'use client';
 import styles from './connect.module.css';
 import { useAppContext as ModalContext } from '@/app/components/contexts/ModalContext';
 
