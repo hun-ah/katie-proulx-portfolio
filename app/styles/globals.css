@@ -141,6 +141,11 @@ button {
   text-transform: uppercase;
 }
 
+.uppercaseSecondary {
+  color: var(--textSecondary);
+  text-transform: uppercase;
+}
+
 /* ------- OTHER ------- */
 
 .imageBorderRadius {
