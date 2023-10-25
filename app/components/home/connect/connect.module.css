@@ -20,7 +20,8 @@
 }
 
 .contact {
+  color: var(--textPrimaryInverse);
+  cursor: pointer;
   text-decoration: underline;
   background: none;
-  color: var(--textPrimaryInverse);
 }
