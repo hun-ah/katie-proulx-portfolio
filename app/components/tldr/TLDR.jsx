@@ -1,5 +1,5 @@
 import styles from './TLDR.module.css';
-import Card from './cards/card';
+import Card from './cards/Card.jsx';
 
 const TLDR = ({ project }) => {
   const projectInfo = project.project;
