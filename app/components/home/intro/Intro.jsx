@@ -33,7 +33,7 @@ const Intro = () => {
                 target='_blank'
               >
                 Linkedin
-                <Icon className={styles.externalLink} />
+                <Icon />
               </a>
             </li>
           </ul>
