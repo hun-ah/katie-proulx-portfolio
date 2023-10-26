@@ -3,10 +3,22 @@ import Image from 'next/image';
 import styles from './page.module.css';
 import ProjectContent from '@/app/components/project-content/ui-design/ProjectContent';
 import { content } from '@/app/data/UIPageDetails';
-import React, { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 
 const UIDesign = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 650);
   const { agilnoTeams, fitnessWorld, championLA, sofiStadium } = content;
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 650);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   const refs = {
     agilnoTeams: useRef(null),
@@ -48,7 +60,9 @@ const UIDesign = () => {
           alt='Sports team logos'
           height={20}
           width={20}
-          src='/ui-design/logos.jpg'
+          src={
+            isMobile ? '/ui-design/logos-mobile.png' : '/ui-design/logos.jpg'
+          }
           className='heightAuto width100'
           unoptimized={true}
         />
