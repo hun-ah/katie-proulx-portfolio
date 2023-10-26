@@ -6,23 +6,17 @@ import { content } from '@/app/data/UIPageDetails';
 import { useRef, useState, useEffect } from 'react';
 
 const UIDesign = () => {
-  const [isMobile, setIsMobile] = useState(
-    typeof window !== 'undefined' ? window.innerWidth <= 650 : false
+  const [windowWidth, setWindowWidth] = useState(
+    typeof window !== undefined && window.innerWidth
   );
-  const { agilnoTeams, fitnessWorld, championLA, sofiStadium } = content;
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const handleResize = () => {
-        setIsMobile(window.innerWidth <= 650);
-      };
-
-      window.addEventListener('resize', handleResize);
-      return () => {
-        window.removeEventListener('resize', handleResize);
-      };
-    }
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
+
+  const { agilnoTeams, fitnessWorld, championLA, sofiStadium } = content;
 
   const refs = {
     agilnoTeams: useRef(null),
@@ -65,7 +59,9 @@ const UIDesign = () => {
           height={20}
           width={20}
           src={
-            isMobile ? '/ui-design/logos-mobile.png' : '/ui-design/logos.jpg'
+            windowWidth <= 650
+              ? '/ui-design/logos-mobile.png'
+              : '/ui-design/logos.jpg'
           }
           className='heightAuto width100'
           unoptimized={true}
