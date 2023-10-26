@@ -1,7 +1,7 @@
 .container {
   align-items: center;
   background: var(--white75);
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   position: fixed;
   top: 60px;
@@ -10,12 +10,14 @@
   opacity: 0;
   overflow: scroll;
   transition: opacity 0.3s ease;
-  z-index: -1;
+  /* z-index: -1; */
+  display: none;
 }
 
 .fadeIn {
   opacity: 1;
   z-index: 1;
+  display: flex;
 }
 
 .modal {
