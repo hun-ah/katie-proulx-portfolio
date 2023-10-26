@@ -1,16 +1,13 @@
 .container {
   align-items: center;
   background: var(--white75);
-  /* display: flex; */
   justify-content: center;
   position: fixed;
-  top: 60px;
   width: 100vw;
   height: calc(100vh - 60px);
   opacity: 0;
   overflow: scroll;
   transition: opacity 0.3s ease;
-  /* z-index: -1; */
   display: none;
 }
 
