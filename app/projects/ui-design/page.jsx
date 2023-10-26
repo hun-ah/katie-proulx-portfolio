@@ -7,7 +7,7 @@ import { useRef, useState, useEffect } from 'react';
 
 const UIDesign = () => {
   const [windowWidth, setWindowWidth] = useState(
-    typeof window !== undefined ? window.innerWidth : null
+    typeof window !== 'undefined' ? window.innerWidth : null
   );
 
   useEffect(() => {
