@@ -24,7 +24,7 @@ export const metadata = {
     siteName: 'Katie Proulx',
     images: [
       {
-        url: 'https://ibb.co/5FXLMw6',
+        url: 'https://i.ibb.co/bJjXWDP/cover.jpg',
         width: 1200,
         height: 630,
       },
