@@ -11,7 +11,7 @@ export const ProjectDetailsProvider = ({ children }) => {
 
   let project;
   switch (path) {
-    case 'theScore':
+    case 'thescore':
       project = projectDetails[0];
       break;
     case 'bevalix':
