@@ -6,7 +6,9 @@ import { content } from '@/app/data/UIPageDetails';
 import { useRef, useState, useEffect } from 'react';
 
 const UIDesign = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 650);
+  const [isMobile, setIsMobile] = useState(
+    typeof window !== 'undefined' ? window.innerWidth <= 650 : false
+  );
   const { agilnoTeams, fitnessWorld, championLA, sofiStadium } = content;
 
   useEffect(() => {
