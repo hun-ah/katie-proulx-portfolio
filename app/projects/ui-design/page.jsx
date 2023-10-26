@@ -6,7 +6,9 @@ import { content } from '@/app/data/UIPageDetails';
 import { useRef, useState, useEffect } from 'react';
 
 const UIDesign = () => {
-  const [windowWidth, setWindowWidth] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(
+    typeof window !== undefined ? window.innerWidth : null
+  );
 
   useEffect(() => {
     if (typeof window !== undefined) {
