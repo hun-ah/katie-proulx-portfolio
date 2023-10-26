@@ -35,6 +35,23 @@
   padding: 40px 24px;
 }
 
+.logoContainer {
+  display: flex;
+}
+
+.logoContainer img {
+  width: 50%;
+}
+
+@media screen and (max-width: 650px) {
+  .logoContainer {
+    flex-direction: column;
+  }
+  .logoContainer img {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .featured ul {
     flex-direction: column;
