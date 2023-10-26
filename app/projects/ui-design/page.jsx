@@ -3,21 +3,9 @@ import Image from 'next/image';
 import styles from './page.module.css';
 import ProjectContent from '@/app/components/project-content/ui-design/ProjectContent';
 import { content } from '@/app/data/UIPageDetails';
-import { useRef, useState, useEffect } from 'react';
+import { useRef } from 'react';
 
 const UIDesign = () => {
-  const [windowWidth, setWindowWidth] = useState(
-    typeof window !== 'undefined' ? window.innerWidth : null
-  );
-
-  useEffect(() => {
-    if (typeof window !== undefined) {
-      const handleResize = () => setWindowWidth(window.innerWidth);
-      window.addEventListener('resize', handleResize);
-      return () => window.removeEventListener('resize', handleResize);
-    }
-  }, []);
-
   const { agilnoTeams, fitnessWorld, championLA, sofiStadium } = content;
 
   const refs = {
@@ -56,18 +44,24 @@ const UIDesign = () => {
         <div className={`${styles.divider} ${styles.marginLarge}`}></div>
       </div>
       <div className='projectInnerContainer'>
-        <Image
-          alt='Sports team logos'
-          height={20}
-          width={20}
-          src={
-            windowWidth <= 650
-              ? '/ui-design/logos-mobile.png'
-              : '/ui-design/logos.jpg'
-          }
-          className='heightAuto width100'
-          unoptimized={true}
-        />
+        <div className={styles.logoContainer}>
+          <Image
+            alt='Sports team logos'
+            height={20}
+            width={20}
+            src='/ui-design/logos1.png'
+            className='heightAuto'
+            unoptimized={true}
+          />
+          <Image
+            alt='Sports team logos'
+            height={20}
+            width={20}
+            src='/ui-design/logos2.png'
+            className='heightAuto'
+            unoptimized={true}
+          />
+        </div>
       </div>
       <div className='projectInnerContainer'>
         <div
