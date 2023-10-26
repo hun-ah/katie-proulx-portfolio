@@ -9,7 +9,7 @@ const ProjectNav = ({ path }) => {
   let project;
 
   switch (path) {
-    case 'theScore':
+    case 'thescore':
       project = projects[2];
       break;
     case 'bevalix':
