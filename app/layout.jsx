@@ -16,7 +16,20 @@ const publicSans = Public_Sans(
 
 export const metadata = {
   title: 'Katie Proulx | Product Designer',
-  description: '',
+  description: 'Toronto based product designer.',
+  openGraph: {
+    title: 'Katie Proulx | Product Designer',
+    description: 'Toronto based product designer.',
+    url: 'https://katieproulx.com',
+    siteName: 'Katie Proulx',
+    images: [
+      {
+        url: 'https://ibb.co/5FXLMw6',
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {
