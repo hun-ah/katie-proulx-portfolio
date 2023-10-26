@@ -102,7 +102,7 @@ export const projects = [
     alt: 'Two mobile phones with theScore BET screens',
     title:
       'Transforming sports betting with a feature highly anticipated by users',
-    href: '/projects/theScore',
+    href: '/projects/thescore',
   },
   {
     id: 3,
