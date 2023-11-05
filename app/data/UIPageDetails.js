@@ -37,7 +37,7 @@ export const content = {
   sofiStadium: {
     projectName: 'Sofi Stadium',
     heading:
-      'In order to be a host city for events like these, a lot of fundraising needs to be done. I designed a website that would facilitate that fundraising by selling exclusive Super Bowl experience packages. We sent personalized urls to a specific audience of businesses and individuals.',
+      'Designing a personalized hospitality dashboard for So-Fi Stadium suite owners',
     subheading:
       'The So-Fi Suite Society portal is a dashboard exclusive to suite owners at So-Fi Stadium. The platform facilitates suite management by allowing the suite owner to edit their profile, view upcoming concerts and events as well as Rams and Chargers game information, book their suite on non-event days, submit personalized requests to their suite service team, and review the unique benefits available to them as suite owners. The creation of this portal was done so to elevate the experience of suite owners at So-Fi Stadium.',
     link: 'sofistadium.com/ss',
