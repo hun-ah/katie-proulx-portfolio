@@ -25,6 +25,7 @@
 
 .overlay {
   cursor: pointer;
+  height: 100%;
 }
 
 .text span {
@@ -52,6 +53,7 @@
 
   .container img {
     border-radius: 0;
+    /* height: 250px; */
     z-index: -1;
   }
 
