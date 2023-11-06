@@ -165,7 +165,7 @@ export const content = {
     },
     {
       number: 4,
-      text: 'Accepting/responding to a call for help',
+      text: 'Accepting/ responding to a call for help',
     },
   ],
 };
