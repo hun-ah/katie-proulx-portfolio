@@ -53,7 +53,7 @@
 
   .container img {
     border-radius: 0;
-    /* height: 250px; */
+    height: 250px;
     z-index: -1;
   }
 
